@@ -11,7 +11,7 @@ def start_message(message):
     bot.remove_webhook()
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
-    bot.send_message(message.chat.id, "*Привіт, {0.first_name}!👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
+    bot.send_message(message.chat.id, "*Привіт, {0.first_name} 👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
     bot.send_message(message.chat.id, "*Якщо ти лікар, то тут ти можеш переглянути розклад своїх пацієнтів*", parse_mode="Markdown")
     ask_for_name(message)
 
@@ -59,7 +59,6 @@ def buttons(message):
         bot.stop_bot()
     # / secret
     elif message.text == "CHOSEN ONES":
-        # delete
         bot.delete_message(message.chat.id, message.message_id)
         bot.send_message(message.chat.id, "*CHOSEN ONES ARE THE BEST!*", parse_mode="Markdown")
     # ! change name
