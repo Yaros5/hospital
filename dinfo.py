@@ -110,135 +110,230 @@ ui19.setupUi(MainW19)
 def open1():
     MainW1.show()
     ui1.pushButton_1.clicked.connect(close1)
+    ui1.pushButton_2.clicked.connect(book1)
 
 def close1():
     MainW1.close()
 
+def book1():
+    pass
+    #booking 
+
 def open2():
     MainW2.show()
     ui2.pushButton_1.clicked.connect(close2)
+    ui2.pushButton_2.clicked.connect(book2)
 
 def close2():
     MainW2.close()
 
+def book2():
+    pass
+    #booking 
+
 def open3():
     MainW3.show()
     ui3.pushButton_1.clicked.connect(close3)
+    ui3.pushButton_2.clicked.connect(book3)
 
 def close3():
     MainW3.close()
 
+def book3():
+    pass
+    #booking 
+
 def open4():
     MainW4.show()
     ui4.pushButton_1.clicked.connect(close4)
+    ui4.pushButton_2.clicked.connect(book4)
 
 def close4():
     MainW4.close()
 
+def book4():
+    pass
+    #booking 
+
 def open5():
     MainW5.show()
     ui5.pushButton_1.clicked.connect(close5)
+    ui5.pushButton_2.clicked.connect(book5)
 
 def close5():
     MainW5.close()
 
+def book5():
+    pass
+    #booking 
+
 def open6():
     MainW6.show()
     ui6.pushButton_1.clicked.connect(close6)
+    ui6.pushButton_2.clicked.connect(book6)
 
 def close6():
     MainW6.close()
 
+def book6():
+    pass
+    #booking 
+
 def open7():
     MainW7.show()
     ui7.pushButton_1.clicked.connect(close7)
+    ui7.pushButton_2.clicked.connect(book7)
 
 def close7():
     MainW7.close()
 
+def book7():
+    pass
+    #booking 
+
 def open8():
     MainW8.show()
     ui8.pushButton_1.clicked.connect(close8)
+    ui8.pushButton_2.clicked.connect(book8)
 
 def close8():
     MainW8.close()
     
+def book8():
+    pass
+    #booking 
+
 def open9():
     MainW9.show()
     ui9.pushButton_1.clicked.connect(close9)
+    ui9.pushButton_2.clicked.connect(book9)
 
 def close9():
     MainW9.close()
 
+def book9():
+    pass
+    #booking 
+
 def open10():
     MainW10.show()
     ui10.pushButton_1.clicked.connect(close10)
+    ui10.pushButton_2.clicked.connect(book10)
 
 def close10():
     MainW10.close()
 
+def book10():
+    pass
+    #booking 
+
 def open11():
     MainW11.show()
     ui11.pushButton_1.clicked.connect(close11)
+    ui11.pushButton_2.clicked.connect(book11)
 
 def close11():
     MainW11.close()
 
+def book11():
+    pass
+    #booking 
+
 def open12():
     MainW12.show()
     ui12.pushButton_1.clicked.connect(close12)
+    ui12.pushButton_2.clicked.connect(book12)
 
 def close12():
     MainW12.close()
 
+def book12():
+    pass
+    #booking 
+
 def open13():
     MainW13.show()
     ui13.pushButton_1.clicked.connect(close13)
+    ui13.pushButton_2.clicked.connect(book13)
 
 def close13():
     MainW13.close()
 
+def book13():
+    pass
+    #booking 
+
 def open14():
     MainW14.show()
     ui14.pushButton_1.clicked.connect(close14)
+    ui14.pushButton_2.clicked.connect(book14)
 
 def close14():
     MainW14.close()
 
+def book14():
+    pass
+    #booking 
+
 def open15():
     MainW15.show()
     ui15.pushButton_1.clicked.connect(close15)
+    ui15.pushButton_2.clicked.connect(book15)
 
 def close15():
     MainW15.close()
 
+def book15():
+    pass
+    #booking 
+
 def open16():
     MainW16.show()
     ui16.pushButton_1.clicked.connect(close16)
+    ui16.pushButton_2.clicked.connect(book16)
 
 def close16():
     MainW16.close()
 
+def book16():
+    pass
+    #booking 
+
 def open17():
     MainW17.show()
     ui17.pushButton_1.clicked.connect(close17)
+    ui17.pushButton_2.clicked.connect(book17)
 
 def close17():
     MainW17.close()
 
+def book17():
+    pass
+    #booking 
+
 def open18():
     MainW18.show()
     ui18.pushButton_1.clicked.connect(close18)
+    ui18.pushButton_2.clicked.connect(book18)
 
 def close18():
     MainW18.close()
 
+def book18():
+    pass
+    #booking 
+
 def open19():
     MainW19.show()
     ui19.pushButton_1.clicked.connect(close19)
+    ui19.pushButton_2.clicked.connect(book19)
 
 def close19():
     MainW19.close()
+
+def book19():
+    pass
+    #booking 
 
 ui.pushButton_5.clicked.connect(open1)
 ui.pushButton_6.clicked.connect(open2)
