@@ -1,50 +1,8 @@
-Brian Schneider
-ENT-doctor
+Ales Ruff
+Gynecologist
 9.00 - 18.00
-12$
-8225
-
-Lydia Jokumsen
-ENT-doctor
-9.00 - 18.00
-20$
-1053
-
-Cili Kipling
-ENT-doctor
-9.00 - 18.00
-25$
-2761
-
-Xenagoras Chaves
-Surgeon
-9.00 - 18.00
-24$
-6832
-
-Mathieu Nanni
-Surgeon
-9.00 - 18.00
-30$
-6937
-
-Scarlet Neil
-Ophthalmologist
-9.00 - 18.00
-17$
-0291
-
-Widald Serra
-Ophthalmologist
-9.00 - 18.00
-15$
-8561
-
-Dimas Bergman
-Physician
-9.00 - 18.00
-25$
-7391
+26$
+2021
 
 Armann Fujimoto
 Physician
@@ -52,41 +10,29 @@ Physician
 30$
 9872
 
-Vanda Chester
-Urologist
-9.00 - 18.00
-20$
-4897
-
 Barnabas Budai
 Cardiologist
 9.00 - 18.00
 24$
 8892
 
-Kristian Trevis
-Cardiologist
+Brian Schneider
+ENT-doctor
 9.00 - 18.00
-22$
-3872
+12$
+8225
 
-Sarit Ridge
-Endocrinologist
+Cili Kipling
+ENT-doctor
 9.00 - 18.00
-15$
-4680
+25$
+2761
 
-Jennifer Kazlow
-Neurologist
+Dimas Bergman
+Physician
 9.00 - 18.00
-21$
-9285
-
-Ales Ruff
-Gynecologist
-9.00 - 18.00
-26$
-2021
+25$
+7391
 
 Elo Carson
 Oncologist
@@ -94,11 +40,29 @@ Oncologist
 35$
 1337
 
-Vaughan Marinov
-Dentist
+Jennifer Kazlow
+Neurologist
+9.00 - 18.00
+21$
+9285
+
+Kristian Trevis
+Cardiologist
+9.00 - 18.00
+22$
+3872
+
+Lydia Jokumsen
+ENT-doctor
 9.00 - 18.00
 20$
-3871
+1053
+
+Mathieu Nanni
+Surgeon
+9.00 - 18.00
+30$
+6937
 
 Nausikaa MacAslan
 Dentist
@@ -111,3 +75,74 @@ Proctologist
 9.00 - 18.00
 18$
 2982
+
+Sarit Ridge
+Endocrinologist
+9.00 - 18.00
+15$
+4680
+
+Scarlet Neil
+Ophthalmologist
+9.00 - 18.00
+17$
+0291
+
+Vanda Chester
+Urologist
+9.00 - 18.00
+20$
+4897
+
+Vaughan Marinov
+Dentist
+9.00 - 18.00
+20$
+3871
+
+Widald Serra
+Ophthalmologist
+9.00 - 18.00
+15$
+8561
+
+Xenagoras Chaves
+Surgeon
+9.00 - 18.00
+24$
+6832
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
