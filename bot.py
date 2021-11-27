@@ -1,4 +1,3 @@
-from flask import Flask, request
 from typing import ItemsView
 from telebot import types
 import telebot
