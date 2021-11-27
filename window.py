@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.label = QtWidgets.QLabel(self.tab)
-        self.label.setGeometry(QtCore.QRect(480, 120, 470, 80))
+        self.label.setGeometry(QtCore.QRect(465, 120, 470, 80))
         self.label.setStyleSheet("font-size: 40px;\n"
 "color: #222222;\n"
 "\n"
@@ -56,62 +56,8 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.label_2.setObjectName("label_2")
-        self.horizontalLayoutWidget = QtWidgets.QWidget(self.tab)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(270, 310, 866, 80))
-        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout.setSpacing(30)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.pushButton = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        self.pushButton.setStyleSheet("QPushButton {\n"
-"  padding: 15px 30px;\n"
-"  font-size: 16px;\n"
-"  border-radius: 15px;\n"
-"  background: #FAFAFA;\n"
-"  border: none;\n"
-"  text-align: center;\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"  background: #f7f2f2;\n"
-"}")
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout.addWidget(self.pushButton)
-        self.lineEdit = QtWidgets.QLineEdit(self.horizontalLayoutWidget)
-        self.lineEdit.setToolTip("")
-        self.lineEdit.setStatusTip("")
-        self.lineEdit.setWhatsThis("")
-        self.lineEdit.setAccessibleName("")
-        self.lineEdit.setAccessibleDescription("")
-        self.lineEdit.setStyleSheet("padding: 15px 30px;\n"
-"font-size: 16px;\n"
-"border-radius: 15px;\n"
-"background: #FAFAFA;\n"
-"border: none;")
-        self.lineEdit.setInputMask("")
-        self.lineEdit.setText("")
-        self.lineEdit.setFrame(True)
-        self.lineEdit.setObjectName("lineEdit")
-        self.horizontalLayout.addWidget(self.lineEdit)
-        self.pushButton_2 = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        self.pushButton_2.setStyleSheet("QPushButton {\n"
-"  padding: 15px 30px;\n"
-"  font-size: 16px;\n"
-"  border-radius: 15px;\n"
-"  background: #2780DD;\n"
-"  border: none;\n"
-"  text-align: center;\n"
-"  color: #fff;\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"  background: #2B5DAA;\n"
-"}")
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout.addWidget(self.pushButton_2)
         self.pushButton_4 = QtWidgets.QPushButton(self.tab)
-        self.pushButton_4.setGeometry(QtCore.QRect(522, 382, 492, 49))
+        self.pushButton_4.setGeometry(QtCore.QRect(370, 382, 492, 49))
         self.pushButton_4.setStyleSheet("QPushButton {\n"
 "  padding: 15px 30px;\n"
 "  font-size: 16px;\n"
@@ -127,24 +73,23 @@ class Ui_MainWindow(object):
         self.pushButton_4.setText("")
         self.pushButton_4.setObjectName("pushButton_4")
         self.pushButton_24 = QtWidgets.QPushButton(self.tab)
-        self.pushButton_24.setGeometry(QtCore.QRect(522, 431, 492, 49))
+        self.pushButton_24.setGeometry(QtCore.QRect(370, 431, 492, 49))
         self.pushButton_24.setStyleSheet("QPushButton {\n"
 "  padding: 15px 30px;\n"
 "  font-size: 16px;\n"
 "  border-radius: 15px;\n"
-"  background-color: #F9DFF9;\n"
+"  background: #FAFAFA;\n"
 "  border: none;\n"
 "  color: #000;\n"
-
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"  background: #f7f2f2;\n"                                  
+"  background: #f7f2f2;\n"
 "}")
         self.pushButton_24.setText("")
         self.pushButton_24.setObjectName("pushButton_24")
         self.pushButton_25 = QtWidgets.QPushButton(self.tab)
-        self.pushButton_25.setGeometry(QtCore.QRect(522, 480, 492, 49))
+        self.pushButton_25.setGeometry(QtCore.QRect(370, 480, 492, 49))
         self.pushButton_25.setStyleSheet("QPushButton {\n"
 "  padding: 15px 30px;\n"
 "  font-size: 16px;\n"
@@ -159,6 +104,38 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_25.setText("")
         self.pushButton_25.setObjectName("pushButton_25")
+        self.lineEdit_46 = QtWidgets.QLineEdit(self.tab)
+        self.lineEdit_46.setGeometry(QtCore.QRect(370, 320, 492, 51))
+        self.lineEdit_46.setToolTip("")
+        self.lineEdit_46.setStatusTip("")
+        self.lineEdit_46.setWhatsThis("")
+        self.lineEdit_46.setAccessibleName("")
+        self.lineEdit_46.setAccessibleDescription("")
+        self.lineEdit_46.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_46.setInputMask("")
+        self.lineEdit_46.setText("")
+        self.lineEdit_46.setFrame(True)
+        self.lineEdit_46.setObjectName("lineEdit_46")
+        self.pushButton_26 = QtWidgets.QPushButton(self.tab)
+        self.pushButton_26.setGeometry(QtCore.QRect(880, 320, 161, 49))
+        self.pushButton_26.setStyleSheet("QPushButton {\n"
+"  padding: 15px 30px;\n"
+"  font-size: 16px;\n"
+"  border-radius: 15px;\n"
+"  background: #2780DD;\n"
+"  border: none;\n"
+"  text-align: center;\n"
+"  color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"  background: #2B5DAA;\n"
+"}")
+        self.pushButton_26.setObjectName("pushButton_26")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -1084,7 +1061,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -1092,9 +1069,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "Search for doctors online"))
         self.label_2.setText(_translate("MainWindow", "Make an appointment without leaving home"))
-        self.pushButton.setText(_translate("MainWindow", "Make an appointment"))
-        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Enter a last name or specialty "))
-        self.pushButton_2.setText(_translate("MainWindow", "Find"))
+        self.lineEdit_46.setPlaceholderText(_translate("MainWindow", "Enter a last name or specialty "))
+        self.pushButton_26.setText(_translate("MainWindow", "Find"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Main Page"))
         self.lineEdit_23.setText(_translate("MainWindow", "Neurologist"))
         self.lineEdit_32.setText(_translate("MainWindow", "Rut Langer"))
