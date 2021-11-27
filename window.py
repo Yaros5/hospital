@@ -112,11 +112,18 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.pushButton_2)
         self.pushButton_4 = QtWidgets.QPushButton(self.tab)
         self.pushButton_4.setGeometry(QtCore.QRect(522, 390, 469, 49))
-        self.pushButton_4.setStyleSheet("padding: 15px 30px;\n"
-"font-size: 16px;\n"
-"border-radius: 15px;\n"
-"background: #FAFAFA;\n"
-"border: none;")
+        self.pushButton_4.setStyleSheet("QPushButton {\n"
+"  padding: 15px 30px;\n"
+"  font-size: 16px;\n"
+"  border-radius: 15px;\n"
+"  background: #FAFAFA;\n"
+"  border: none;\n"
+"  color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"  background: #f7f2f2;\n"
+"}")
         self.pushButton_4.setText("")
         self.pushButton_4.setObjectName("pushButton_4")
         self.tabWidget.addTab(self.tab, "")
