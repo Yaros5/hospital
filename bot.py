@@ -31,8 +31,7 @@ def verification(message):
 
 
     global db, sql
-    # db = sqlite3.connect('server.db')
-    db = sqlite3.connect('/server.db')
+    db = sqlite3.connect('server.db')
     sql = db.cursor()
 
     sql.execute('''CREATE TABLE IF NOT EXISTS users (
@@ -47,11 +46,11 @@ def verification(message):
         sql.execute(f"INSERT INTO users VALUES (?, ?, ?)" , (login_from_bot, 1111, 0))
         db.commit()
         print("Вас успішно зарегестровано")
-        bot.send_message(message.chat.id, "Вас успішно зарегестровано")
+        bot.send_message(message.chat.id, "*[Вас успішно зарегестровано]*", parse_mode="Markdown")
 
     else:
         print("Такий акаунт вже існує")
-        bot.send_message(message.chat.id, "Такий акаунт вже існує")
+        bot.send_message(message.chat.id, "*[Такий акаунт вже існує]*", parse_mode="Markdown")
 
 
 # ! buttons
