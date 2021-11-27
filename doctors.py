@@ -38,12 +38,12 @@ while True:
     Doctors.hours.append(data.readline())
     Doctors.price.append(data.readline())
     Doctors.password.append(data.readline())
-    Doctors.login.append(Doctors.firstName[-1] + Doctors.lastName[-1])
+    Doctors.login.append(Doctors.firstName[-1] + "_" + Doctors.lastName[-1])
     if not data.readline():
         break
 data.close()
 
-print(Doctors.firstName)
+print(Doctors.login)
 
 ui.pushButton_2.clicked.connect(Search())
 
