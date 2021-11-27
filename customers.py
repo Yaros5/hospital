@@ -6,7 +6,10 @@ from window import Ui_MainWindow
 app = QtWidgets.QApplication(sys.argv)
 
 # проводим ініціалізації
+MainWindow = QtWidgets.QMainWindow()
 ui = Ui_MainWindow()
+ui.setupUi(MainWindow)
+MainWindow.show()
 
 # getting current login from logging in
 currentLogin = "Oleg_Sadovskyy"
@@ -26,7 +29,7 @@ class Customer:
 
     def updateTxt():
         data = open("customers.txt","w")
-        for item in firstName:
+        for item in Customer.login:
             data.write(Customer.firstName[item])
             data.write(Customer.lastName[item])
             data.write(Customer.middleName[item])
@@ -71,7 +74,6 @@ for i in range(len(temp)):
     Customer.login.append(Customer.firstName[-1] + "_" + Customer.lastName[-1])
     if not data.readline():
         break
-
 index = Customer.login.index(currentLogin)
 data.close()
 
