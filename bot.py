@@ -24,26 +24,10 @@ def change_name(message):
 
 # ! verification
 def verification(message):
-    # add inline
-    markup_inline_yn = types.InlineKeyboardMarkup()
-    item_yes = types.InlineKeyboardButton(text="Yes", callback_data="yes")
-    item_no = types.InlineKeyboardButton(text="No", callback_data="no")
-    markup_inline_yn.add(item_yes, item_no)
-    bot.send_message(message.chat.id, f"*Your name is {message.text}?*", reply_markup=markup_inline_yn, parse_mode="Markdown")
-# ! verification_complete
-@bot.callback_query_handler(func=lambda call: True)
-def verification_complete(call):
-    if call.data == "yes":
-        # add keyboard
-        keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        item_change_name = types.KeyboardButton("✒️ Change name")
-        item_schedule = types.KeyboardButton("📰 Schedule")
-        keyboard.add(item_change_name, item_schedule)
-        bot.send_message(call.message.chat.id, "*Choose what to do next*", reply_markup=keyboard, parse_mode="Markdown")
-    elif call.data == "no":
-        change_name(call.message)
-    # delete message
-    bot.delete_message(call.message.chat.id, call.message.message_id)
+    bot.send_message(message.chat.id, f"*Your name is {message.text}*", parse_mode="Markdown")
+    login_from_bot = message.text
+    print(f"User login from bot: {login_from_bot}")
+
 
 # ! buttons
 @bot.message_handler(content_types=["text"])
