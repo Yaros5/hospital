@@ -111,7 +111,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setObjectName("pushButton_2")
         self.horizontalLayout.addWidget(self.pushButton_2)
         self.pushButton_4 = QtWidgets.QPushButton(self.tab)
-        self.pushButton_4.setGeometry(QtCore.QRect(522, 390, 492, 49))
+        self.pushButton_4.setGeometry(QtCore.QRect(522, 382, 492, 49))
         self.pushButton_4.setStyleSheet("QPushButton {\n"
 "  padding: 15px 30px;\n"
 "  font-size: 16px;\n"
@@ -126,6 +126,38 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_4.setText("")
         self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_24 = QtWidgets.QPushButton(self.tab)
+        self.pushButton_24.setGeometry(QtCore.QRect(522, 431, 492, 49))
+        self.pushButton_24.setStyleSheet("QPushButton {\n"
+"  padding: 15px 30px;\n"
+"  font-size: 16px;\n"
+"  border-radius: 15px;\n"
+"  background: #FAFAFA;\n"
+"  border: none;\n"
+"  color: #000;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"  background: #f7f2f2;\n"
+"}")
+        self.pushButton_24.setText("")
+        self.pushButton_24.setObjectName("pushButton_24")
+        self.pushButton_25 = QtWidgets.QPushButton(self.tab)
+        self.pushButton_25.setGeometry(QtCore.QRect(522, 480, 492, 49))
+        self.pushButton_25.setStyleSheet("QPushButton {\n"
+"  padding: 15px 30px;\n"
+"  font-size: 16px;\n"
+"  border-radius: 15px;\n"
+"  background: #FAFAFA;\n"
+"  border: none;\n"
+"  color: #000;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"  background: #f7f2f2;\n"
+"}")
+        self.pushButton_25.setText("")
+        self.pushButton_25.setObjectName("pushButton_25")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -1097,8 +1129,7 @@ class Ui_MainWindow(object):
         self.lineEdit_29.setText(_translate("MainWindow", "Cardiologist"))
         self.lineEdit_27.setText(_translate("MainWindow", "Urologist"))
         self.lineEdit_43.setText(_translate("MainWindow", "Nausikaa MacAslan"))
-        self.lineEdit_37.setText(_translate("MainWindow", "Jennifer Kazlow\n"
-" "))
+        self.lineEdit_37.setText(_translate("MainWindow", "Jennifer Kazlow "))
         self.lineEdit_41.setText(_translate("MainWindow", "Vaughan Marinov"))
         self.lineEdit_20.setText(_translate("MainWindow", "Widald Serra"))
         self.lineEdit_9.setText(_translate("MainWindow", "ENT-doctor"))
