@@ -1,3 +1,4 @@
+import sqlite3
 from typing import ItemsView
 from telebot import types
 import telebot
