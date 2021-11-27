@@ -10,13 +10,7 @@ bot = telebot.TeleBot(TOKEN)
 # ! start
 @bot.message_handler(commands=["start", "help"])
 def start_message(message):
-    global cursor, connect
-    bot.remove_webhook()
     # remove keyboard
-    connect = sqlite3.connect('server.db')
-    cursor = connect.cursor()
-    cursor.execute('''CREATE TABLE IF NOT EXISTS Oleh (login TEXT,password TEXT)''')
-    connect.commit()
     remove_keyboard = types.ReplyKeyboardRemove()
     bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()),
                      reply_markup=remove_keyboard, parse_mode="Markdown")
@@ -37,34 +31,30 @@ def change_name(message):
 # ! verification
 def verification(message):
     bot.send_message(message.chat.id, f"*Your name is {message.text}*", parse_mode="Markdown")
+
+    # / login
     login_from_bot = message.text
     print(f"User login from bot: {login_from_bot}")
-    cursor.execute(f"SELECT id FROM Oleh WHERE login = {login_from_bot}")
-    data = cursor.fetchall()
-    if  cursor.fetchone() is None:
-        bot.send_message('такого корситувача не існує')
+    # / id
+    id_from_bot = message.from_user.id
+    print(f"User id from bot: {id_from_bot}")
 
     global db, sql
     db = sqlite3.connect('server.db')
     sql = db.cursor()
-
-    sql.execute('''CREATE TABLE IF NOT EXISTS users (
-    login Text,
-    password Text,
-    cash int
-    )''')
+    sql.execute('''CREATE TABLE IF NOT EXISTS users (login TEXT, password TEXT)''')
     db.commit()
 
     sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}" ')
     if sql.fetchone() is None:
-        sql.execute(f"INSERT INTO users VALUES (?, ?, ?)" , (login_from_bot, 1111, 0))
+        sql.execute(f"INSERT INTO users VALUES (?, ?)", (login_from_bot, 1))
         db.commit()
-        print("Вас успішно зарегестровано")
-        bot.send_message(message.chat.id, "*[Вас успішно зарегестровано]*", parse_mode="Markdown")
-
+        print("Вас успішно зареєстровано")
+        bot.send_message(message.chat.id, "*[Вас успішно зареєстровано]*", parse_mode="Markdown")
     else:
         print("Такий акаунт вже існує")
         bot.send_message(message.chat.id, "*[Такий акаунт вже існує]*", parse_mode="Markdown")
+
 
 
 # ! buttons
