@@ -132,13 +132,14 @@ class Ui_MainWindow(object):
 "  padding: 15px 30px;\n"
 "  font-size: 16px;\n"
 "  border-radius: 15px;\n"
-"  background: #FAFAFA;\n"
+"  background-color: #F9DFF9;\n"
 "  border: none;\n"
 "  color: #000;\n"
+
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"  background: #f7f2f2;\n"
+"  background: #f7f2f2;\n"                                  
 "}")
         self.pushButton_24.setText("")
         self.pushButton_24.setObjectName("pushButton_24")

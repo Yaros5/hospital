@@ -1,34 +1,48 @@
-import sqlite3
 from typing import ItemsView
 from telebot import types
 import telebot
+import sqlite3
 
 TOKEN = "2142529380:AAH9OvlYi9zcii99FWijDrQiVhwGOjuFRn0"
 bot = telebot.TeleBot(TOKEN)
 
+
 # ! start
 @bot.message_handler(commands=["start", "help"])
 def start_message(message):
+    global cursor, connect
     bot.remove_webhook()
     # remove keyboard
+    connect = sqlite3.connect('server.db')
+    cursor = connect.cursor()
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Oleh (login TEXT,password TEXT)''')
+    connect.commit()
     remove_keyboard = types.ReplyKeyboardRemove()
-    bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
-    bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*", parse_mode="Markdown")
+    bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()),
+                     reply_markup=remove_keyboard, parse_mode="Markdown")
+    bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*",
+                     parse_mode="Markdown")
     change_name(message)
+
 
 # ! change name
 def change_name(message):
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
-    msg = bot.send_message(message.chat.id, "Send me your *full name*", parse_mode="Markdown", reply_markup=remove_keyboard)
+    msg = bot.send_message(message.chat.id, "Send me your *full name*", parse_mode="Markdown",
+                           reply_markup=remove_keyboard)
     bot.register_next_step_handler(msg, verification)
+
 
 # ! verification
 def verification(message):
     bot.send_message(message.chat.id, f"*Your name is {message.text}*", parse_mode="Markdown")
     login_from_bot = message.text
     print(f"User login from bot: {login_from_bot}")
-
+    cursor.execute(f"SELECT id FROM Oleh WHERE login = {login_from_bot}")
+    data = cursor.fetchall()
+    if  cursor.fetchone() is None:
+        bot.send_message('такого корситувача не існує')
 
     global db, sql
     db = sqlite3.connect('server.db')
@@ -79,6 +93,7 @@ def buttons(message):
         bot.send_message(message.chat.id, "Patient 1")
         bot.send_message(message.chat.id, "Patient 2")
         bot.send_message(message.chat.id, "Patient 3")
+
 
 # ! polling
 bot.infinity_polling()
