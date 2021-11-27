@@ -39,6 +39,7 @@ class Customer:
         pass
 
 def Save():
+    print(Customer.email)
     Customer.lastName[index] = ui.lineEdit_2.text()
     Customer.firstName[index] = ui.lineEdit_3.text()
     Customer.middleName[index] = ui.lineEdit_4.text()
@@ -70,11 +71,11 @@ for i in range(len(temp)):
     Customer.login.append(Customer.firstName[-1] + "_" + Customer.lastName[-1])
     if not data.readline():
         break
-print(Customer.firstName)
+
 index = Customer.login.index(currentLogin)
 data.close()
 
 ui.pushButton_3.clicked.connect(Save())
 
 # виходим з вікна
-#sys.exit(app.exec_())
+sys.exit(app.exec_())
