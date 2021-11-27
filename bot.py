@@ -29,7 +29,7 @@ def verification(message):
     item_yes = types.InlineKeyboardButton(text="Так", callback_data="yes")
     item_no = types.InlineKeyboardButton(text="Ні", callback_data="no")
     markup_inline_yn.add(item_yes, item_no)
-    bot.send_message(message.chat.id, "*Тебе звати f{message.text}?*", reply_markup=markup_inline_yn, parse_mode="Markdown")
+    bot.send_message(message.chat.id, f"*Тебе звати {message.text}?*", reply_markup=markup_inline_yn, parse_mode="Markdown")
 # ! verification_complete
 @bot.callback_query_handler(func=lambda call: True)
 def verification_complete(call):
