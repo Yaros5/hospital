@@ -1,4 +1,6 @@
 from typing import ItemsView
+
+from nacl import secret
 from telebot import types
 import telebot
 
@@ -37,11 +39,11 @@ def buttons(message):
     if message.text == "remove_webhook":
         bot.delete_message(message.chat.id, message.message_id)
         bot.remove_webhook()
-    # / stop polling
+    / stop polling
     elif message.text == "stop_polling":
         bot.delete_message(message.chat.id, message.message_id)
         bot.stop_bot()
-    # / secret
+    / secret
     elif message.text == "CHOSEN ONES":
         bot.delete_message(message.chat.id, message.message_id)
         bot.send_message(message.chat.id, "*CHOSEN ONES ARE THE BEST!*", parse_mode="Markdown")
