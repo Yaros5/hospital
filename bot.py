@@ -32,7 +32,7 @@ def verification(message):
 
     global db, sql
     # db = sqlite3.connect('server.db')
-    db = sqlite3.connect('/server.db')
+    db = sqlite3.connect('C:/Users/maksi/Desktop/Work/server.db')
     sql = db.cursor()
 
     sql.execute('''CREATE TABLE IF NOT EXISTS users (
