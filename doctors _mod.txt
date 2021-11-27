@@ -1,0 +1,113 @@
+Brian Schneider
+ENT-doctor
+9.00 - 18.00
+12$
+8225
+
+Lydia Jokumsen
+ENT-doctor
+9.00 - 18.00
+20$
+1053
+
+Cili Kipling
+ENT-doctor
+9.00 - 18.00
+25$
+2761
+
+Xenagoras Chaves
+Surgeon
+9.00 - 18.00
+24$
+6832
+
+Mathieu Nanni
+Surgeon
+9.00 - 18.00
+30$
+6937
+
+Scarlet Neil
+Ophthalmologist
+9.00 - 18.00
+17$
+0291
+
+Widald Serra
+Ophthalmologist
+9.00 - 18.00
+15$
+8561
+
+Dimas Bergman
+Physician
+9.00 - 18.00
+25$
+7391
+
+Armann Fujimoto
+Physician
+9.00 - 18.00
+30$
+9872
+
+Vanda Chester
+Urologist
+9.00 - 18.00
+20$
+4897
+
+Barnabas Budai
+Cardiologist
+9.00 - 18.00
+24$
+8892
+
+Kristian Trevis
+Cardiologist
+9.00 - 18.00
+22$
+3872
+
+Sarit Ridge
+Endocrinologist
+9.00 - 18.00
+15$
+4680
+
+Jennifer Kazlow
+Neurologist
+9.00 - 18.00
+21$
+9285
+
+Ales Ruff
+Gynecologist
+9.00 - 18.00
+26$
+2021
+
+Elo Carson
+Oncologist
+9.00 - 18.00
+35$
+1337
+
+Vaughan Marinov
+Dentist
+9.00 - 18.00
+20$
+3871
+
+Nausikaa MacAslan
+Dentist
+9.00 - 18.00
+27$
+1234
+
+Rut Langer
+Proctologist
+9.00 - 18.00
+18$
+2982
