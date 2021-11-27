@@ -1,30 +1,57 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
-import sys
+import sqlite3
+import random
 
-from window import Ui_MainWindow
+global db, sql
+db = sqlite3.connect('server.db')
+sql = db.cursor()
 
-app = QtWidgets.QApplication(sys.argv)
-MainWindow = QtWidgets.QMainWindow()
+sql.execute('''CREATE TABLE IF NOT EXISTS users (
+	login Text,
+	password Text,
+	cash int
 
-ui = Ui_MainWindow()
-ui.setupUi(MainWindow)
+	)''')
+db.commit()
 
+def reg():
+	user_login = input('login: ')
+	user_password = input('Password: ')
 
+	sql.execute(f'SELECT login FROM users WHERE login = "{user_login}" ')
+	if sql.fetchone() is None:
+		sql.execute(f"INSERT INTO users VALUES (?, ?, ?)" , (user_login, user_password, 0))
+		db.commit()
+		print('вас успішно зарегестровано')
+	else:
+		print('така запись вже є ')
 
-def bp():
-    label_1 = ui.lineEdit.text()
+		for value in sql.execute(f"SELECT * FROM users"):
+			print(value)
 
-    label_2 = ui.lineEdit_2.text()
-    label_3 = ui.lineEdit_3.text()
+def casino():
+	print('вас вітає казіно ведіть свої дані щоб поучаствувати')
+	user_login = input('log in: ')
+	number = random.randint(1, 2)
 
+	sql.execute(f'SELECT login FROM users WHERE login = "{user_login}" ')
+	if sql.fetchone() is None:
+		print('Такого користувача не існує зарегиструйтесь')
+		reg()
+	else:	
+		if number == 1:
+			sql.execute(f'UPDATE users SET cash = {1000} WHERE login = "{user_login}"')
+			print('ви виграли!')
+			db.commit()
+		else:
 
+			print('game over!')
 
+def enter():
+	for i in sql.execute('SELECT login, cash FROM users'):
+		print(i)
 
+def main():
+	casino()
+	enter()
 
-
-ui.pushButton.clicked.connect(bp)
-
-
-MainWindow.show()
-sys.exit(app.exec_())
-
+main()		
