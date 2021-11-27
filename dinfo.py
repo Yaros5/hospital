@@ -20,7 +20,8 @@ from doc16 import Ui_MainWindow_16
 from doc17 import Ui_MainWindow_17
 from doc18 import Ui_MainWindow_18
 from doc19 import Ui_MainWindow_19
-from bot import verification
+from appointment import Ui_MainWindow_B
+import bot
 
 # додаєм в проект стартовий файл
 app = QtWidgets.QApplication(sys.argv)
@@ -108,9 +109,22 @@ MainW19 = QtWidgets.QMainWindow()
 ui19 = Ui_MainWindow_19()
 ui19.setupUi(MainW19)
 
-def book(id):
+MainWBook = QtWidgets.QMainWindow()
+uiB = Ui_MainWindow_B()
+uiB.setupUi(MainWBook)
+
+def botBook():
+    #id = 780892851
+    bot.bot.send_message(780892851, "*A new appointment has been created!*", parse_mode="Markdown")
     pass
-    #booking 
+
+def book():
+    MainWBook.show()
+    uiB.pushButton_2.clicked.connect(closeB)
+    uiB.pushButton_1.clicked.connect(botBook)
+
+def closeB():
+    MainWBook.close()
 
 def open1():
     MainW1.show()

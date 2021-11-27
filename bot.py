@@ -54,10 +54,10 @@ def verification(message):
         sql.execute(f"INSERT INTO users VALUES (?, ?)", (login_from_bot, id_from_bot))
         db.commit()
         print("Вас успішно зареєстровано\n")
-        bot.send_message(message.chat.id, "*[Вас успішно зареєстровано]*", parse_mode="Markdown")
+        bot.send_message(message.chat.id, "*[You've been successfully registered!]*", parse_mode="Markdown")
     else:
         print("Такий акаунт вже існує\n")
-        bot.send_message(message.chat.id, "*[Такий акаунт вже існує]*", parse_mode="Markdown")
+        bot.send_message(message.chat.id, "*[Account with this name already exists!]*", parse_mode="Markdown")
 
 
 
