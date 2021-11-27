@@ -25,15 +25,6 @@ ENT-doctor
 25$
 2761
 
-Rut
-Langer
-29 y/o
-8 years
-Proctologist
-9.00 - 18.00
-18$
-2982
-
 Xenagoras
 Chaves
 43 y/o
@@ -168,3 +159,12 @@ Dentist
 9.00 - 18.00
 27$
 1234
+
+Rut
+Langer
+29 y/o
+8 years
+Proctologist
+9.00 - 18.00
+18$
+2982
