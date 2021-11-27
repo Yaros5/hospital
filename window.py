@@ -111,7 +111,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setObjectName("pushButton_2")
         self.horizontalLayout.addWidget(self.pushButton_2)
         self.pushButton_4 = QtWidgets.QPushButton(self.tab)
-        self.pushButton_4.setGeometry(QtCore.QRect(522, 390, 469, 49))
+        self.pushButton_4.setGeometry(QtCore.QRect(522, 390, 492, 49))
         self.pushButton_4.setStyleSheet("QPushButton {\n"
 "  padding: 15px 30px;\n"
 "  font-size: 16px;\n"
@@ -140,7 +140,7 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1380, 5540))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_2.setContentsMargins(30, 30, 30, 30)
+        self.gridLayout_2.setContentsMargins(50, 30, 50, 30)
         self.gridLayout_2.setHorizontalSpacing(70)
         self.gridLayout_2.setVerticalSpacing(30)
         self.gridLayout_2.setObjectName("gridLayout_2")
@@ -747,7 +747,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -814,8 +814,8 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "Phone number*"))
         self.label_12.setText(_translate("MainWindow", "Email*"))
         self.pushButton_3.setText(_translate("MainWindow", "Save"))
-        self.comboBox.setItemText(0, _translate("MainWindow", "Men"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "Women"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "Male"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "Female"))
         self.label_13.setText(_translate("MainWindow", "Sex*"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "My Profile"))
 
