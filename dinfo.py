@@ -116,7 +116,26 @@ uiB.setupUi(MainWBook)
 def botBook():
     #id = 780892851
     bot.bot.send_message(780892851, "*A new appointment has been created!*", parse_mode="Markdown")
-    pass
+    MainWBook.close()
+    close1()
+    close2()
+    close3()
+    close4()
+    close5()
+    close6()
+    close7()
+    close8()
+    close9()
+    close10()
+    close11()
+    close12()
+    close13()
+    close14()
+    close15()
+    close16()
+    close17()
+    close18()
+    close19()
 
 def book():
     MainWBook.show()
