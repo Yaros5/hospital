@@ -12,14 +12,14 @@ def start_message(message):
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
     bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
-    bot.send_message(message.chat.id, "*If you are a doctor, then here you can view the schedule of your patients*", parse_mode="Markdown")
+    bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*", parse_mode="Markdown")
     ask_for_name(message)
 
 # ! ask for name
 def ask_for_name(message):
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
-    msg = bot.send_message(message.chat.id, "Write me your *name* and *last name*", parse_mode="Markdown", reply_markup=remove_keyboard)
+    msg = bot.send_message(message.chat.id, "Send me your *full name*", parse_mode="Markdown", reply_markup=remove_keyboard)
     bot.register_next_step_handler(msg, verification)
 
 # ! verification
@@ -66,11 +66,11 @@ def buttons(message):
         ask_for_name(message)
     # ! schedule
     elif message.text == "📰 Schedule":
-        bot.send_message(message.chat.id, "*Your patients` schedule:*", parse_mode="Markdown")
+        bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
         # example
-        bot.send_message(message.chat.id, "Пацієнт 1")
-        bot.send_message(message.chat.id, "Пацієнт 2")
-        bot.send_message(message.chat.id, "Пацієнт 3")
+        bot.send_message(message.chat.id, "Patient 1")
+        bot.send_message(message.chat.id, "Patient 2")
+        bot.send_message(message.chat.id, "Patient 3")
 
 # ! polling
 bot.infinity_polling()
