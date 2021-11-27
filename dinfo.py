@@ -109,60 +109,136 @@ ui19.setupUi(MainW19)
 
 def open1():
     MainW1.show()
+    ui1.pushButton_1.clicked.connect(close1)
+
+def close1():
+    MainW1.close()
 
 def open2():
     MainW2.show()
+    ui2.pushButton_1.clicked.connect(close2)
+
+def close2():
+    MainW2.close()
 
 def open3():
     MainW3.show()
+    ui3.pushButton_1.clicked.connect(close3)
+
+def close3():
+    MainW3.close()
 
 def open4():
     MainW4.show()
+    ui4.pushButton_1.clicked.connect(close4)
+
+def close4():
+    MainW4.close()
 
 def open5():
     MainW5.show()
+    ui5.pushButton_1.clicked.connect(close5)
+
+def close5():
+    MainW5.close()
 
 def open6():
     MainW6.show()
+    ui6.pushButton_1.clicked.connect(close6)
+
+def close6():
+    MainW6.close()
 
 def open7():
     MainW7.show()
+    ui7.pushButton_1.clicked.connect(close7)
+
+def close7():
+    MainW7.close()
 
 def open8():
     MainW8.show()
+    ui8.pushButton_1.clicked.connect(close8)
 
+def close8():
+    MainW8.close()
+    
 def open9():
     MainW9.show()
+    ui9.pushButton_1.clicked.connect(close9)
+
+def close9():
+    MainW9.close()
 
 def open10():
     MainW10.show()
+    ui10.pushButton_1.clicked.connect(close10)
+
+def close10():
+    MainW10.close()
 
 def open11():
     MainW11.show()
+    ui11.pushButton_1.clicked.connect(close11)
+
+def close11():
+    MainW11.close()
 
 def open12():
     MainW12.show()
+    ui12.pushButton_1.clicked.connect(close12)
+
+def close12():
+    MainW12.close()
 
 def open13():
     MainW13.show()
+    ui13.pushButton_1.clicked.connect(close13)
+
+def close13():
+    MainW13.close()
 
 def open14():
     MainW14.show()
+    ui14.pushButton_1.clicked.connect(close14)
+
+def close14():
+    MainW14.close()
 
 def open15():
     MainW15.show()
+    ui15.pushButton_1.clicked.connect(close15)
+
+def close15():
+    MainW15.close()
 
 def open16():
     MainW16.show()
+    ui16.pushButton_1.clicked.connect(close16)
+
+def close16():
+    MainW16.close()
 
 def open17():
     MainW17.show()
+    ui17.pushButton_1.clicked.connect(close17)
+
+def close17():
+    MainW17.close()
 
 def open18():
     MainW18.show()
+    ui18.pushButton_1.clicked.connect(close18)
+
+def close18():
+    MainW18.close()
 
 def open19():
     MainW19.show()
+    ui19.pushButton_1.clicked.connect(close19)
+
+def close19():
+    MainW19.close()
 
 ui.pushButton_5.clicked.connect(open1)
 ui.pushButton_6.clicked.connect(open2)
