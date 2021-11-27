@@ -118,7 +118,7 @@ class Ui_MainWindow(object):
 "  border-radius: 15px;\n"
 "  background: #FAFAFA;\n"
 "  border: none;\n"
-"  color: #fff;\n"
+"  color: #000;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
