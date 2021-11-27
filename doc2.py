@@ -10,7 +10,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow_2(object):
+class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
@@ -37,22 +37,6 @@ class Ui_MainWindow_2(object):
         self.label_2.setGeometry(QtCore.QRect(100, 340, 101, 17))
         self.label_2.setStyleSheet("color:#7f8c8d")
         self.label_2.setObjectName("label_2")
-        self.pushButton_1 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_1.setGeometry(QtCore.QRect(170, 715, 160, 50))
-        self.pushButton_1.setStyleSheet("QPushButton {\n"
-"  padding: 15px 30px;\n"
-"  font-size: 16px;\n"
-"  border-radius: 15px;\n"
-"  background: #2780DD;\n"
-"  border: none;\n"
-"  text-align: center;\n"
-"  color: #fff;\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"  background: #2B5DAA;\n"
-"}")
-        self.pushButton_1.setObjectName("pushButton_1")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(100, 425, 101, 17))
         self.label_3.setStyleSheet("color:#7f8c8d")
@@ -92,6 +76,38 @@ class Ui_MainWindow_2(object):
 "border: none;")
         self.lineEdit_4.setReadOnly(True)
         self.lineEdit_4.setObjectName("lineEdit_4")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(234, 715, 201, 50))
+        self.pushButton_2.setStyleSheet("QPushButton {\n"
+"  padding: 15px 30px;\n"
+"  font-size: 16px;\n"
+"  border-radius: 15px;\n"
+"  background: #2780DD;\n"
+"  border: none;\n"
+"  text-align: center;\n"
+"  color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"  background: #2B5DAA;\n"
+"}")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_1 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_1.setGeometry(QtCore.QRect(65, 715, 121, 50))
+        self.pushButton_1.setStyleSheet("QPushButton {\n"
+"  padding: 15px 30px;\n"
+"  font-size: 16px;\n"
+"  border-radius: 15px;\n"
+"  background: #ED3C34;\n"
+"  border: none;\n"
+"  text-align: center;\n"
+"  color: #fff;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"  background: #AA2823;\n"
+"}")
+        self.pushButton_1.setObjectName("pushButton_1")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -102,20 +118,21 @@ class Ui_MainWindow_2(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.lineEdit_1.setText(_translate("MainWindow", "Armann Fujimoto"))
         self.label_2.setText(_translate("MainWindow", "Full name"))
-        self.pushButton_1.setText(_translate("MainWindow", "Close"))
         self.label_3.setText(_translate("MainWindow", "Specialization"))
         self.lineEdit_2.setText(_translate("MainWindow", "Physician"))
         self.label_4.setText(_translate("MainWindow", "Working hours"))
         self.lineEdit_3.setText(_translate("MainWindow", "9.00 - 18.00"))
         self.label_5.setText(_translate("MainWindow", "$/hour"))
         self.lineEdit_4.setText(_translate("MainWindow", "30$"))
+        self.pushButton_2.setText(_translate("MainWindow", "Make appointment"))
+        self.pushButton_1.setText(_translate("MainWindow", "Close"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_2()
+    ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
