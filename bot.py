@@ -33,26 +33,30 @@ def verification(message):
     bot.send_message(message.chat.id, f"*Your name is {message.text}*", parse_mode="Markdown")
 
     # / login
+    global login_from_bot
     login_from_bot = message.text
     print(f"User login from bot: {login_from_bot}")
     # / id
+    global id_from_bot
     id_from_bot = message.from_user.id
     print(f"User id from bot: {id_from_bot}")
 
+    # ! database
     global db, sql
     db = sqlite3.connect('server.db')
     sql = db.cursor()
-    sql.execute('''CREATE TABLE IF NOT EXISTS users (login TEXT, password TEXT)''')
+    sql.execute('''CREATE TABLE IF NOT EXISTS users (login TEXT, telegramID TEXT)''')
     db.commit()
 
-    sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}" ')
+    # sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}" ')
+    sql.execute(f'SELECT telegramID FROM users WHERE telegramID = "{id_from_bot}" ')
     if sql.fetchone() is None:
-        sql.execute(f"INSERT INTO users VALUES (?, ?)", (login_from_bot, 1))
+        sql.execute(f"INSERT INTO users VALUES (?, ?)", (login_from_bot, id_from_bot))
         db.commit()
-        print("Вас успішно зареєстровано")
+        print("Вас успішно зареєстровано\n")
         bot.send_message(message.chat.id, "*[Вас успішно зареєстровано]*", parse_mode="Markdown")
     else:
-        print("Такий акаунт вже існує")
+        print("Такий акаунт вже існує\n")
         bot.send_message(message.chat.id, "*[Такий акаунт вже існує]*", parse_mode="Markdown")
 
 
