@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'doc13.ui'
+# Form implementation generated from reading ui file 'doc7.ui'
 #
 # Created by: PyQt5 UI code generator 5.14.1
 #
@@ -10,7 +10,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+class Ui_MainWindow_7(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
@@ -100,22 +100,22 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.lineEdit_1.setText(_translate("MainWindow", "Rut Langer"))
+        self.lineEdit_1.setText(_translate("MainWindow", "Elo Carson"))
         self.label_2.setText(_translate("MainWindow", "Full name"))
         self.pushButton_1.setText(_translate("MainWindow", "Close"))
         self.label_3.setText(_translate("MainWindow", "Specialization"))
-        self.lineEdit_2.setText(_translate("MainWindow", "Proctologist"))
+        self.lineEdit_2.setText(_translate("MainWindow", "Oncologist"))
         self.label_4.setText(_translate("MainWindow", "Working hours"))
         self.lineEdit_3.setText(_translate("MainWindow", "9.00 - 18.00"))
         self.label_5.setText(_translate("MainWindow", "$/hour"))
-        self.lineEdit_4.setText(_translate("MainWindow", "18$"))
+        self.lineEdit_4.setText(_translate("MainWindow", "35$"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
+    ui = Ui_MainWindow_7()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

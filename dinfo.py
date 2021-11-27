@@ -1,12 +1,30 @@
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 from window import Ui_MainWindow
+from doc1 import Ui_MainWindow_1
+from doc2 import Ui_MainWindow_2
+from doc3 import Ui_MainWindow_3
+from doc4 import Ui_MainWindow_4
+from doc5 import Ui_MainWindow_5
+from doc6 import Ui_MainWindow_6
+from doc7 import Ui_MainWindow_7
+from doc8 import Ui_MainWindow_8
+from doc9 import Ui_MainWindow_9
+from doc10 import Ui_MainWindow_10
+from doc11 import Ui_MainWindow_11
+from doc12 import Ui_MainWindow_12
+from doc13 import Ui_MainWindow_13
+from doc14 import Ui_MainWindow_14
+from doc15 import Ui_MainWindow_15
+from doc16 import Ui_MainWindow_16
+from doc17 import Ui_MainWindow_17
+from doc18 import Ui_MainWindow_18
+from doc19 import Ui_MainWindow_19
 
 # додаєм в проект стартовий файл
 app = QtWidgets.QApplication(sys.argv)
 
 # проводим ініціалізації
-
 
 MainWindow = QtWidgets.QMainWindow()
 ui = Ui_MainWindow()
@@ -14,79 +32,79 @@ ui.setupUi(MainWindow)
 MainWindow.show()
 
 MainW1 = QtWidgets.QMainWindow()
-ui1 = Ui_MainWindow1()
+ui1 = Ui_MainWindow_1()
 ui1.setupUi(MainW1)
 
 MainW2 = QtWidgets.QMainWindow()
-ui2 = Ui_MainWindow2()
+ui2 = Ui_MainWindow_2()
 ui2.setupUi(MainW2)
 
 MainW3 = QtWidgets.QMainWindow()
-ui3 = Ui_MainWindow3()
+ui3 = Ui_MainWindow_3()
 ui3.setupUi(MainW3)
 
 MainW4 = QtWidgets.QMainWindow()
-ui4 = Ui_MainWindow4()
+ui4 = Ui_MainWindow_4()
 ui4.setupUi(MainW4)
 
 MainW5 = QtWidgets.QMainWindow()
-ui5 = Ui_MainWindow5()
+ui5 = Ui_MainWindow_5()
 ui5.setupUi(MainW5)
 
 MainW6 = QtWidgets.QMainWindow()
-ui6 = Ui_MainWindow6()
+ui6 = Ui_MainWindow_6()
 ui6.setupUi(MainW6)
 
 MainW7 = QtWidgets.QMainWindow()
-ui7 = Ui_MainWindow7()
+ui7 = Ui_MainWindow_7()
 ui7.setupUi(MainW7)
 
 MainW8 = QtWidgets.QMainWindow()
-ui8 = Ui_MainWindow8()
+ui8 = Ui_MainWindow_8()
 ui8.setupUi(MainW8)
 
 MainW9 = QtWidgets.QMainWindow()
-ui9 = Ui_MainWindow9()
+ui9 = Ui_MainWindow_9()
 ui9.setupUi(MainW9)
 
 MainW10 = QtWidgets.QMainWindow()
-ui10 = Ui_MainWindow10()
+ui10 = Ui_MainWindow_10()
 ui10.setupUi(MainW10)
 
 MainW11 = QtWidgets.QMainWindow()
-ui11 = Ui_MainWindow11()
+ui11 = Ui_MainWindow_11()
 ui11.setupUi(MainW11)
 
 MainW12 = QtWidgets.QMainWindow()
-ui12 = Ui_MainWindow12()
+ui12 = Ui_MainWindow_12()
 ui12.setupUi(MainW12)
 
 MainW13 = QtWidgets.QMainWindow()
-ui13 = Ui_MainWindow13()
+ui13 = Ui_MainWindow_13()
 ui13.setupUi(MainW13)
 
 MainW14 = QtWidgets.QMainWindow()
-ui14 = Ui_MainWindow14()
+ui14 = Ui_MainWindow_14()
 ui14.setupUi(MainW14)
 
 MainW15 = QtWidgets.QMainWindow()
-ui15 = Ui_MainWindow15()
+ui15 = Ui_MainWindow_15()
 ui15.setupUi(MainW15)
 
 MainW16 = QtWidgets.QMainWindow()
-ui16 = Ui_MainWindow16()
+ui16 = Ui_MainWindow_16()
 ui16.setupUi(MainW16)
 
 MainW17 = QtWidgets.QMainWindow()
-ui17 = Ui_MainWindow17()
+ui17 = Ui_MainWindow_17()
 ui17.setupUi(MainW17)
 
 MainW18 = QtWidgets.QMainWindow()
-ui18 = Ui_MainWindow18()
+ui18 = Ui_MainWindow_18()
 ui18.setupUi(MainW18)
 
 MainW19 = QtWidgets.QMainWindow()
-ui19 = Ui_MainWindow19()
+ui19 = Ui_MainWindow_19()
 ui19.setupUi(MainW19)
 
 def open1():
