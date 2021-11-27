@@ -5,3 +5,39 @@ doctors_dict = {'firstname' :  ['Brian','Lydia','Cili','Rut','Xenagoras','Mathie
                 'specialty' :  ['ENT-doctor','ENT-doctor','ENT-doctor','Proctologist','Surgeon','Surgeon','Ophthalmologist','Ophthalmologist','Physician','Physician','Urologist','Cardiologist','Cardiologist','Endocrinologist','Neurologist','Gynecologist','Oncologist','Dentist','Dentist'],
                 'hours' :      ['9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00','9.00 - 18.00'],
                 'price' :      ['12$','20$','25$','18$','24$','30$','17$','15$','25$','30$','20$','24$','22$','15$','21$','26$','35$','20$','27$']}
+
+import sys
+from PyQt5 import QtCore, QtGui, QtWidgets
+from window import Ui_MainWindow
+
+# додаєм в проект стартовий файл
+app = QtWidgets.QApplication(sys.argv)
+
+# проводим ініціалізації
+ui = Ui_MainWindow()
+
+# Прописуєм логіку кнопки
+
+class Doctors:
+    #getting data from database
+    login = {}
+    password = {}
+    firstName = {}
+    lastName = {}
+    age = {}
+    exp = {}
+    speciality = {}
+    hours = {}
+    price = {}
+
+def Search():
+    searchText = ui.lineEdit.text()
+    for item in login:
+        if Doctors.firstName[item].find(searchText) != -1 or Doctors.lastName[item].find(searchText) != -1 or Doctors.speciality[item].find(searchText) != -1:
+            #gets data from this doctor
+            pass
+        
+ui.pushButton_2.clicked.connect(Search())
+
+# виходим з вікна
+#sys.exit(app.exec_())
