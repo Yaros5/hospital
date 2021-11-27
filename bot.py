@@ -30,6 +30,29 @@ def verification(message):
     print(f"User login from bot: {login_from_bot}")
 
 
+    global db, sql
+    db = sqlite3.connect('server.db')
+    sql = db.cursor()
+
+    sql.execute('''CREATE TABLE IF NOT EXISTS users (
+    login Text,
+    password Text,
+    cash int
+    )''')
+    db.commit()
+
+    sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}" ')
+    if sql.fetchone() is None:
+        sql.execute(f"INSERT INTO users VALUES (?, ?, ?)" , (login_from_bot, 1111, 0))
+        db.commit()
+        print("Вас успішно зарегестровано")
+        bot.send_message(message.chat.id, "Вас успішно зарегестровано")
+
+    else:
+        print("Такий акаунт вже існує")
+        bot.send_message(message.chat.id, "Такий акаунт вже існує")
+
+
 # ! buttons
 @bot.message_handler(content_types=["text"])
 def buttons(message):
