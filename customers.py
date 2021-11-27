@@ -38,7 +38,7 @@ def Save():
     Customer.updateDb()
 
 def changePass():
-    #change pass
+    #change password
     pass
 
 ui.pushButton_3.clicked.connect(Save)
