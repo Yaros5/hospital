@@ -8,34 +8,41 @@ bot = telebot.TeleBot(TOKEN)
 # ! start
 @bot.message_handler(commands=["start", "help"])
 def start_message(message):
+    bot.remove_webhook()
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
     bot.send_message(message.chat.id, "*Привіт, {0.first_name}!👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
     bot.send_message(message.chat.id, "*Якщо ти лікар, то тут ти можеш переглянути розклад своїх пацієнтів*", parse_mode="Markdown")
-    global msg
+    ask_for_name(message)
+
+# ! ask for name
+def ask_for_name(message):
     msg = bot.send_message(message.chat.id, "Напиши мені своє *ім'я* та *прізвище*", parse_mode="Markdown")
     bot.register_next_step_handler(msg, verification)
 
 # ! buttons
 @bot.message_handler(content_types=["text"])
-def change_name(message):
-    # ! change name
-    if message.text == "✒️ Змінити ім'я":
+def buttons(message):
+    # ! ADMIN
+    # / remove webhook
+    if message.text == "remove_webhook":
+        bot.delete_message(message.chat.id, message.message_id)
+        bot.remove_webhook()
+
+    # / secret
+    elif message.text == "CHOSEN ONES":
         # delete
         bot.delete_message(message.chat.id, message.message_id)
+        bot.send_message(message.chat.id, "*CHOSEN ONES ARE THE BEST!*", parse_mode="Markdown")
 
+    # ! change name
+    elif message.text == "✒️ Змінити ім'я":
         # remove keyboard
         remove_keyboard = types.ReplyKeyboardRemove()
-
-        global msg
-        msg = bot.send_message(message.chat.id, "Напиши мені своє *ім'я* та *прізвище*", reply_markup=remove_keyboard, parse_mode="Markdown")
-        bot.register_next_step_handler(msg, verification)
+        ask_for_name(message)
 
     # ! schedule
     elif message.text == "📰 Розклад":
-        # delete
-        bot.delete_message(message.chat.id, message.message_id)
-
         bot.send_message(message.chat.id, "*Розклад твоїх пацієнтів:*", parse_mode="Markdown")
 
         # example
@@ -67,9 +74,7 @@ def verification_complete(call):
         # remove keyboard
         remove_keyboard = types.ReplyKeyboardRemove()
 
-        global msg
-        msg = bot.send_message(call.message.chat.id, "Напиши мені своє *ім'я* та *прізвище*", reply_markup=remove_keyboard, parse_mode="Markdown")
-        bot.register_next_step_handler(msg, verification)
+        ask_for_name(call.message)
 
     # delete
     bot.delete_message(call.message.chat.id, call.message.message_id)
