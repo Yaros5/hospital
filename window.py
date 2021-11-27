@@ -110,6 +110,15 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_2.setObjectName("pushButton_2")
         self.horizontalLayout.addWidget(self.pushButton_2)
+        self.pushButton_4 = QtWidgets.QPushButton(self.tab)
+        self.pushButton_4.setGeometry(QtCore.QRect(522, 390, 469, 49))
+        self.pushButton_4.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.pushButton_4.setText("")
+        self.pushButton_4.setObjectName("pushButton_4")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -279,7 +288,7 @@ class Ui_MainWindow(object):
         self.label_12.setStyleSheet("color:#7f8c8d")
         self.label_12.setObjectName("label_12")
         self.pushButton_3 = QtWidgets.QPushButton(self.tab_3)
-        self.pushButton_3.setGeometry(QtCore.QRect(1220, 680, 150, 49))
+        self.pushButton_3.setGeometry(QtCore.QRect(625, 620, 150, 49))
         self.pushButton_3.setStyleSheet("QPushButton {\n"
 "  padding: 15px 30px;\n"
 "  font-size: 16px;\n"
@@ -294,21 +303,6 @@ class Ui_MainWindow(object):
 "  background: #2B5DAA;\n"
 "}")
         self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_4 = QtWidgets.QPushButton(self.tab_3)
-        self.pushButton_4.setGeometry(QtCore.QRect(50, 680, 191, 49))
-        self.pushButton_4.setStyleSheet("QPushButton {\n"
-"  padding: 15px 30px;\n"
-"  font-size: 16px;\n"
-"  border: none;\n"
-"  text-align: center;\n"
-"  color: #222222;\n"
-"  text-decoration: underline;\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"  color: #2B5DAA;\n"
-"}")
-        self.pushButton_4.setObjectName("pushButton_4")
         self.comboBox = QtWidgets.QComboBox(self.tab_3)
         self.comboBox.setGeometry(QtCore.QRect(360, 250, 290, 51))
         self.comboBox.setAutoFillBackground(False)
@@ -329,7 +323,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -365,7 +359,6 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "Номер телефону*"))
         self.label_12.setText(_translate("MainWindow", "Електронна адреса*"))
         self.pushButton_3.setText(_translate("MainWindow", "Зберегти"))
-        self.pushButton_4.setText(_translate("MainWindow", "Змінити пароль"))
         self.comboBox.setItemText(0, _translate("MainWindow", "Чоловіча"))
         self.comboBox.setItemText(1, _translate("MainWindow", "Жіноча"))
         self.label_13.setText(_translate("MainWindow", "Стать*"))
