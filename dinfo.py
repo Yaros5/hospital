@@ -136,7 +136,6 @@ def botBook():
     close17()
     close18()
     close19()
-    pass
 
 def book():
     MainWBook.show()
