@@ -130,59 +130,476 @@ class Ui_MainWindow(object):
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.gridLayout = QtWidgets.QGridLayout(self.tab_2)
-        self.gridLayout.setContentsMargins(10, 10, 10, 10)
-        self.gridLayout.setSpacing(5)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setSpacing(0)
         self.gridLayout.setObjectName("gridLayout")
         self.scrollArea = QtWidgets.QScrollArea(self.tab_2)
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1374, 747))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1380, 5540))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_2.setContentsMargins(5, 5, 5, 5)
-        self.gridLayout_2.setSpacing(10)
+        self.gridLayout_2.setContentsMargins(30, 30, 30, 30)
+        self.gridLayout_2.setHorizontalSpacing(70)
+        self.gridLayout_2.setVerticalSpacing(30)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.pushButton_6 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.gridLayout_2.addWidget(self.pushButton_6, 1, 3, 1, 1)
+        self.label_24 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_24.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_24.setText("")
+        self.label_24.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_24.setObjectName("label_24")
+        self.gridLayout_2.addWidget(self.label_24, 11, 0, 1, 1)
+        self.lineEdit_23 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_23.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_23.setReadOnly(True)
+        self.lineEdit_23.setObjectName("lineEdit_23")
+        self.gridLayout_2.addWidget(self.lineEdit_23, 7, 2, 1, 1)
+        self.lineEdit_32 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_32.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_32.setReadOnly(True)
+        self.lineEdit_32.setObjectName("lineEdit_32")
+        self.gridLayout_2.addWidget(self.lineEdit_32, 12, 1, 1, 1)
+        self.label_22 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_22.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_22.setText("")
+        self.label_22.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_22.setObjectName("label_22")
+        self.gridLayout_2.addWidget(self.label_22, 9, 0, 1, 1)
         self.lineEdit_7 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_7.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_7.setReadOnly(True)
         self.lineEdit_7.setObjectName("lineEdit_7")
-        self.gridLayout_2.addWidget(self.lineEdit_7, 0, 2, 1, 1)
-        self.pushButton_7 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.gridLayout_2.addWidget(self.pushButton_7, 2, 3, 1, 1)
+        self.gridLayout_2.addWidget(self.lineEdit_7, 0, 1, 1, 1)
+        self.lineEdit_17 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_17.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_17.setReadOnly(True)
+        self.lineEdit_17.setObjectName("lineEdit_17")
+        self.gridLayout_2.addWidget(self.lineEdit_17, 4, 2, 1, 1)
+        self.label_19 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_19.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_19.setText("")
+        self.label_19.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_19.setObjectName("label_19")
+        self.gridLayout_2.addWidget(self.label_19, 6, 0, 1, 1)
+        self.lineEdit_15 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_15.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_15.setReadOnly(True)
+        self.lineEdit_15.setObjectName("lineEdit_15")
+        self.gridLayout_2.addWidget(self.lineEdit_15, 3, 2, 1, 1)
+        self.lineEdit_31 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_31.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_31.setReadOnly(True)
+        self.lineEdit_31.setObjectName("lineEdit_31")
+        self.gridLayout_2.addWidget(self.lineEdit_31, 11, 2, 1, 1)
+        self.lineEdit_39 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_39.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_39.setReadOnly(True)
+        self.lineEdit_39.setObjectName("lineEdit_39")
+        self.gridLayout_2.addWidget(self.lineEdit_39, 15, 1, 1, 1)
+        self.label_29 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_29.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_29.setText("")
+        self.label_29.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_29.setObjectName("label_29")
+        self.gridLayout_2.addWidget(self.label_29, 16, 0, 1, 1)
+        self.lineEdit_25 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_25.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_25.setReadOnly(True)
+        self.lineEdit_25.setObjectName("lineEdit_25")
+        self.gridLayout_2.addWidget(self.lineEdit_25, 8, 2, 1, 1)
+        self.lineEdit_30 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_30.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_30.setReadOnly(True)
+        self.lineEdit_30.setObjectName("lineEdit_30")
+        self.gridLayout_2.addWidget(self.lineEdit_30, 11, 1, 1, 1)
+        self.label_30 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_30.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_30.setText("")
+        self.label_30.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_30.setObjectName("label_30")
+        self.gridLayout_2.addWidget(self.label_30, 17, 0, 1, 1)
+        self.lineEdit_24 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_24.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_24.setReadOnly(True)
+        self.lineEdit_24.setObjectName("lineEdit_24")
+        self.gridLayout_2.addWidget(self.lineEdit_24, 8, 1, 1, 1)
+        self.lineEdit_34 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_34.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_34.setReadOnly(True)
+        self.lineEdit_34.setObjectName("lineEdit_34")
+        self.gridLayout_2.addWidget(self.lineEdit_34, 13, 2, 1, 1)
+        self.lineEdit_38 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_38.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_38.setReadOnly(True)
+        self.lineEdit_38.setObjectName("lineEdit_38")
+        self.gridLayout_2.addWidget(self.lineEdit_38, 15, 2, 1, 1)
+        self.lineEdit_13 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_13.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_13.setReadOnly(True)
+        self.lineEdit_13.setObjectName("lineEdit_13")
+        self.gridLayout_2.addWidget(self.lineEdit_13, 2, 2, 1, 1)
+        self.label_18 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_18.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_18.setText("")
+        self.label_18.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_18.setObjectName("label_18")
+        self.gridLayout_2.addWidget(self.label_18, 5, 0, 1, 1)
         self.lineEdit_10 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_10.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_10.setReadOnly(True)
         self.lineEdit_10.setObjectName("lineEdit_10")
-        self.gridLayout_2.addWidget(self.lineEdit_10, 2, 2, 1, 1)
-        self.pushButton_5 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.gridLayout_2.addWidget(self.pushButton_5, 0, 3, 1, 1)
-        self.label_14 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.label_14.setStyleSheet("")
-        self.label_14.setObjectName("label_14")
-        self.gridLayout_2.addWidget(self.label_14, 1, 0, 1, 1)
-        self.label_15 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.label_15.setStyleSheet("")
-        self.label_15.setObjectName("label_15")
-        self.gridLayout_2.addWidget(self.label_15, 2, 0, 1, 1)
-        self.lineEdit_9 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
-        self.lineEdit_9.setObjectName("lineEdit_9")
-        self.gridLayout_2.addWidget(self.lineEdit_9, 1, 2, 1, 1)
+        self.gridLayout_2.addWidget(self.lineEdit_10, 1, 1, 1, 1)
+        self.lineEdit_45 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_45.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_45.setReadOnly(True)
+        self.lineEdit_45.setObjectName("lineEdit_45")
+        self.gridLayout_2.addWidget(self.lineEdit_45, 18, 1, 1, 1)
+        self.lineEdit_33 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_33.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_33.setReadOnly(True)
+        self.lineEdit_33.setObjectName("lineEdit_33")
+        self.gridLayout_2.addWidget(self.lineEdit_33, 12, 2, 1, 1)
         self.label_7 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.label_7.setStyleSheet("")
+        self.label_7.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_7.setText("")
+        self.label_7.setPixmap(QtGui.QPixmap("profile.png"))
         self.label_7.setObjectName("label_7")
         self.gridLayout_2.addWidget(self.label_7, 0, 0, 1, 1)
+        self.label_25 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_25.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_25.setText("")
+        self.label_25.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_25.setObjectName("label_25")
+        self.gridLayout_2.addWidget(self.label_25, 12, 0, 1, 1)
+        self.lineEdit_22 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_22.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_22.setReadOnly(True)
+        self.lineEdit_22.setObjectName("lineEdit_22")
+        self.gridLayout_2.addWidget(self.lineEdit_22, 7, 1, 1, 1)
+        self.lineEdit_19 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_19.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_19.setReadOnly(True)
+        self.lineEdit_19.setObjectName("lineEdit_19")
+        self.gridLayout_2.addWidget(self.lineEdit_19, 5, 2, 1, 1)
+        self.lineEdit_14 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_14.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_14.setReadOnly(True)
+        self.lineEdit_14.setObjectName("lineEdit_14")
+        self.gridLayout_2.addWidget(self.lineEdit_14, 3, 1, 1, 1)
+        self.lineEdit_40 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_40.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_40.setReadOnly(True)
+        self.lineEdit_40.setObjectName("lineEdit_40")
+        self.gridLayout_2.addWidget(self.lineEdit_40, 16, 2, 1, 1)
+        self.label_28 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_28.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_28.setText("")
+        self.label_28.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_28.setObjectName("label_28")
+        self.gridLayout_2.addWidget(self.label_28, 15, 0, 1, 1)
+        self.label_23 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_23.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_23.setText("")
+        self.label_23.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_23.setObjectName("label_23")
+        self.gridLayout_2.addWidget(self.label_23, 10, 0, 1, 1)
+        self.lineEdit_18 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_18.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_18.setReadOnly(True)
+        self.lineEdit_18.setObjectName("lineEdit_18")
+        self.gridLayout_2.addWidget(self.lineEdit_18, 5, 1, 1, 1)
+        self.lineEdit_28 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_28.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_28.setReadOnly(True)
+        self.lineEdit_28.setObjectName("lineEdit_28")
+        self.gridLayout_2.addWidget(self.lineEdit_28, 10, 1, 1, 1)
+        self.label_17 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_17.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_17.setText("")
+        self.label_17.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_17.setObjectName("label_17")
+        self.gridLayout_2.addWidget(self.label_17, 4, 0, 1, 1)
+        self.lineEdit_26 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_26.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_26.setReadOnly(True)
+        self.lineEdit_26.setObjectName("lineEdit_26")
+        self.gridLayout_2.addWidget(self.lineEdit_26, 9, 1, 1, 1)
+        self.label_27 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_27.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_27.setText("")
+        self.label_27.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_27.setObjectName("label_27")
+        self.gridLayout_2.addWidget(self.label_27, 14, 0, 1, 1)
+        self.lineEdit_36 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_36.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_36.setReadOnly(True)
+        self.lineEdit_36.setObjectName("lineEdit_36")
+        self.gridLayout_2.addWidget(self.lineEdit_36, 14, 1, 1, 1)
+        self.lineEdit_12 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_12.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_12.setReadOnly(True)
+        self.lineEdit_12.setObjectName("lineEdit_12")
+        self.gridLayout_2.addWidget(self.lineEdit_12, 2, 1, 1, 1)
+        self.lineEdit_35 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_35.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_35.setReadOnly(True)
+        self.lineEdit_35.setObjectName("lineEdit_35")
+        self.gridLayout_2.addWidget(self.lineEdit_35, 14, 2, 1, 1)
+        self.lineEdit_11 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_11.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_11.setReadOnly(True)
+        self.lineEdit_11.setObjectName("lineEdit_11")
+        self.gridLayout_2.addWidget(self.lineEdit_11, 1, 2, 1, 1)
         self.label_16 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.label_16.setStyleSheet("")
+        self.label_16.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_16.setText("")
+        self.label_16.setPixmap(QtGui.QPixmap("profile.png"))
         self.label_16.setObjectName("label_16")
         self.gridLayout_2.addWidget(self.label_16, 3, 0, 1, 1)
-        self.lineEdit_11 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
-        self.lineEdit_11.setObjectName("lineEdit_11")
-        self.gridLayout_2.addWidget(self.lineEdit_11, 3, 2, 1, 1)
-        self.pushButton_8 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.gridLayout_2.addWidget(self.pushButton_8, 3, 3, 1, 1)
+        self.label_21 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_21.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_21.setText("")
+        self.label_21.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_21.setObjectName("label_21")
+        self.gridLayout_2.addWidget(self.label_21, 8, 0, 1, 1)
+        self.lineEdit_21 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_21.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_21.setReadOnly(True)
+        self.lineEdit_21.setObjectName("lineEdit_21")
+        self.gridLayout_2.addWidget(self.lineEdit_21, 6, 2, 1, 1)
+        self.lineEdit_42 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_42.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_42.setReadOnly(True)
+        self.lineEdit_42.setObjectName("lineEdit_42")
+        self.gridLayout_2.addWidget(self.lineEdit_42, 17, 2, 1, 1)
+        self.lineEdit_16 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_16.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_16.setReadOnly(True)
+        self.lineEdit_16.setObjectName("lineEdit_16")
+        self.gridLayout_2.addWidget(self.lineEdit_16, 4, 1, 1, 1)
+        self.lineEdit_44 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_44.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_44.setReadOnly(True)
+        self.lineEdit_44.setObjectName("lineEdit_44")
+        self.gridLayout_2.addWidget(self.lineEdit_44, 18, 2, 1, 1)
+        self.lineEdit_29 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_29.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_29.setReadOnly(True)
+        self.lineEdit_29.setObjectName("lineEdit_29")
+        self.gridLayout_2.addWidget(self.lineEdit_29, 10, 2, 1, 1)
+        self.label_15 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_15.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_15.setText("")
+        self.label_15.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_15.setObjectName("label_15")
+        self.gridLayout_2.addWidget(self.label_15, 2, 0, 1, 1)
+        self.lineEdit_27 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_27.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_27.setReadOnly(True)
+        self.lineEdit_27.setObjectName("lineEdit_27")
+        self.gridLayout_2.addWidget(self.lineEdit_27, 9, 2, 1, 1)
+        self.label_31 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_31.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_31.setText("")
+        self.label_31.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_31.setObjectName("label_31")
+        self.gridLayout_2.addWidget(self.label_31, 18, 0, 1, 1)
+        self.label_14 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_14.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_14.setText("")
+        self.label_14.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_14.setObjectName("label_14")
+        self.gridLayout_2.addWidget(self.label_14, 1, 0, 1, 1)
+        self.lineEdit_43 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_43.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_43.setReadOnly(True)
+        self.lineEdit_43.setObjectName("lineEdit_43")
+        self.gridLayout_2.addWidget(self.lineEdit_43, 17, 1, 1, 1)
+        self.label_20 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_20.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_20.setText("")
+        self.label_20.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_20.setObjectName("label_20")
+        self.gridLayout_2.addWidget(self.label_20, 7, 0, 1, 1)
+        self.label_26 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_26.setStyleSheet("border: 5px solid #f7f2f2")
+        self.label_26.setText("")
+        self.label_26.setPixmap(QtGui.QPixmap("profile.png"))
+        self.label_26.setObjectName("label_26")
+        self.gridLayout_2.addWidget(self.label_26, 13, 0, 1, 1)
+        self.lineEdit_37 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_37.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_37.setReadOnly(True)
+        self.lineEdit_37.setObjectName("lineEdit_37")
+        self.gridLayout_2.addWidget(self.lineEdit_37, 13, 1, 1, 1)
+        self.lineEdit_41 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_41.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_41.setReadOnly(True)
+        self.lineEdit_41.setObjectName("lineEdit_41")
+        self.gridLayout_2.addWidget(self.lineEdit_41, 16, 1, 1, 1)
+        self.lineEdit_20 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_20.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_20.setReadOnly(True)
+        self.lineEdit_20.setObjectName("lineEdit_20")
+        self.gridLayout_2.addWidget(self.lineEdit_20, 6, 1, 1, 1)
+        self.lineEdit_9 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.lineEdit_9.setStyleSheet("padding: 15px 30px;\n"
+"font-size: 16px;\n"
+"border-radius: 15px;\n"
+"background: #FAFAFA;\n"
+"border: none;")
+        self.lineEdit_9.setReadOnly(True)
+        self.lineEdit_9.setObjectName("lineEdit_9")
+        self.gridLayout_2.addWidget(self.lineEdit_9, 0, 2, 1, 1)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
         self.tabWidget.addTab(self.tab_2, "")
@@ -246,7 +663,7 @@ class Ui_MainWindow(object):
 "border: none;")
         self.lineEdit_5.setObjectName("lineEdit_5")
         self.label_8 = QtWidgets.QLabel(self.tab_3)
-        self.label_8.setGeometry(QtCore.QRect(730, 223, 171, 17))
+        self.label_8.setGeometry(QtCore.QRect(731, 223, 171, 17))
         self.label_8.setStyleSheet("color:#7f8c8d")
         self.label_8.setObjectName("label_8")
         self.label_9 = QtWidgets.QLabel(self.tab_3)
@@ -330,45 +747,76 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "Шукайте лікарів онлайн"))
-        self.label_2.setText(_translate("MainWindow", "Записуйтесь на прийом не виходячи з дому"))
-        self.pushButton.setText(_translate("MainWindow", "Записатись до лікаря"))
-        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Введіть прізвище або спеціальність"))
-        self.pushButton_2.setText(_translate("MainWindow", "Знайти"))
+        self.label.setText(_translate("MainWindow", "Search for doctors online"))
+        self.label_2.setText(_translate("MainWindow", "Make an appointment without leaving home"))
+        self.pushButton.setText(_translate("MainWindow", "Make an appointment"))
+        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Enter a last name or specialty "))
+        self.pushButton_2.setText(_translate("MainWindow", "Find"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Main Page"))
-        self.pushButton_6.setText(_translate("MainWindow", "PushButton"))
-        self.pushButton_7.setText(_translate("MainWindow", "PushButton"))
-        self.pushButton_5.setText(_translate("MainWindow", "PushButton"))
-        self.label_14.setText(_translate("MainWindow", "TextLabel"))
-        self.label_15.setText(_translate("MainWindow", "TextLabel"))
-        self.label_7.setText(_translate("MainWindow", "TextLabel"))
-        self.label_16.setText(_translate("MainWindow", "TextLabel"))
-        self.pushButton_8.setText(_translate("MainWindow", "PushButton"))
+        self.lineEdit_23.setText(_translate("MainWindow", "Physician"))
+        self.lineEdit_32.setText(_translate("MainWindow", "Sarit Ridge"))
+        self.lineEdit_7.setText(_translate("MainWindow", "Brian Schneider"))
+        self.lineEdit_17.setText(_translate("MainWindow", "Surgeon"))
+        self.lineEdit_15.setText(_translate("MainWindow", "Surgeon"))
+        self.lineEdit_31.setText(_translate("MainWindow", "Cardiologist"))
+        self.lineEdit_39.setText(_translate("MainWindow", "Elo Carson"))
+        self.lineEdit_25.setText(_translate("MainWindow", "Physician"))
+        self.lineEdit_30.setText(_translate("MainWindow", "Kristian Trevis"))
+        self.lineEdit_24.setText(_translate("MainWindow", "Armann Fujimoto"))
+        self.lineEdit_34.setText(_translate("MainWindow", "Neurologist"))
+        self.lineEdit_38.setText(_translate("MainWindow", "Oncologist"))
+        self.lineEdit_13.setText(_translate("MainWindow", "ENT-doctor"))
+        self.lineEdit_10.setText(_translate("MainWindow", "Lydia Jokumsen"))
+        self.lineEdit_45.setText(_translate("MainWindow", "Rut Langer"))
+        self.lineEdit_33.setText(_translate("MainWindow", "Endocrinologist"))
+        self.lineEdit_22.setText(_translate("MainWindow", "Dimas Bergman"))
+        self.lineEdit_19.setText(_translate("MainWindow", "Ophthalmologist"))
+        self.lineEdit_14.setText(_translate("MainWindow", "Xenagoras Chaves"))
+        self.lineEdit_40.setText(_translate("MainWindow", "Dentist"))
+        self.lineEdit_18.setText(_translate("MainWindow", "Scarlet Neil"))
+        self.lineEdit_28.setText(_translate("MainWindow", "Barnabas Budai"))
+        self.lineEdit_26.setText(_translate("MainWindow", "Vanda Chester"))
+        self.lineEdit_36.setText(_translate("MainWindow", "Ales Ruff"))
+        self.lineEdit_12.setText(_translate("MainWindow", "Cili Kipling"))
+        self.lineEdit_35.setText(_translate("MainWindow", "Gynecologist"))
+        self.lineEdit_11.setText(_translate("MainWindow", "ENT-doctor"))
+        self.lineEdit_21.setText(_translate("MainWindow", "Ophthalmologist"))
+        self.lineEdit_42.setText(_translate("MainWindow", "Dentist"))
+        self.lineEdit_16.setText(_translate("MainWindow", "Mathieu Nanni"))
+        self.lineEdit_44.setText(_translate("MainWindow", "Proctologist"))
+        self.lineEdit_29.setText(_translate("MainWindow", "Cardiologist"))
+        self.lineEdit_27.setText(_translate("MainWindow", "Urologist"))
+        self.lineEdit_43.setText(_translate("MainWindow", "Nausikaa MacAslan"))
+        self.lineEdit_37.setText(_translate("MainWindow", "Jennifer Kazlow\n"
+" "))
+        self.lineEdit_41.setText(_translate("MainWindow", "Vaughan Marinov"))
+        self.lineEdit_20.setText(_translate("MainWindow", "Widald Serra"))
+        self.lineEdit_9.setText(_translate("MainWindow", "ENT-doctor"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Doctors"))
-        self.lineEdit_2.setText(_translate("MainWindow", "Прізвище"))
-        self.lineEdit_3.setText(_translate("MainWindow", "Ім\'я"))
-        self.lineEdit_4.setText(_translate("MainWindow", "По батькові"))
-        self.label_4.setText(_translate("MainWindow", "Прізвище*"))
-        self.label_5.setText(_translate("MainWindow", "Ім\'я*"))
-        self.label_6.setText(_translate("MainWindow", "По батькові*"))
-        self.lineEdit_5.setText(_translate("MainWindow", "Дата народження"))
-        self.label_8.setText(_translate("MainWindow", "Дата народження*"))
-        self.label_9.setText(_translate("MainWindow", "Контактна інформація"))
-        self.label_10.setText(_translate("MainWindow", "Особиста інформація"))
-        self.lineEdit_6.setText(_translate("MainWindow", "Номер телефону"))
-        self.lineEdit_8.setText(_translate("MainWindow", "Електронна адреса"))
-        self.label_11.setText(_translate("MainWindow", "Номер телефону*"))
-        self.label_12.setText(_translate("MainWindow", "Електронна адреса*"))
-        self.pushButton_3.setText(_translate("MainWindow", "Зберегти"))
-        self.comboBox.setItemText(0, _translate("MainWindow", "Чоловіча"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "Жіноча"))
-        self.label_13.setText(_translate("MainWindow", "Стать*"))
+        self.lineEdit_2.setText(_translate("MainWindow", "First name"))
+        self.lineEdit_3.setText(_translate("MainWindow", "Last name"))
+        self.lineEdit_4.setText(_translate("MainWindow", "Middle name"))
+        self.label_4.setText(_translate("MainWindow", "First name*"))
+        self.label_5.setText(_translate("MainWindow", "Last name*"))
+        self.label_6.setText(_translate("MainWindow", "Middle name*"))
+        self.lineEdit_5.setText(_translate("MainWindow", "Date of birth"))
+        self.label_8.setText(_translate("MainWindow", "Date of birth*"))
+        self.label_9.setText(_translate("MainWindow", "Contact Information"))
+        self.label_10.setText(_translate("MainWindow", "Personal Information"))
+        self.lineEdit_6.setText(_translate("MainWindow", "Phone number"))
+        self.lineEdit_8.setText(_translate("MainWindow", "Email"))
+        self.label_11.setText(_translate("MainWindow", "Phone number*"))
+        self.label_12.setText(_translate("MainWindow", "Email*"))
+        self.pushButton_3.setText(_translate("MainWindow", "Save"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "Men"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "Women"))
+        self.label_13.setText(_translate("MainWindow", "Sex*"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "My Profile"))
 
 
