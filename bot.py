@@ -13,10 +13,10 @@ def start_message(message):
     remove_keyboard = types.ReplyKeyboardRemove()
     bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
     bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*", parse_mode="Markdown")
-    ask_for_name(message)
+    change_name(message)
 
-# ! ask for name
-def ask_for_name(message):
+# ! change name
+def change_name(message):
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
     msg = bot.send_message(message.chat.id, "Send me your *full name*", parse_mode="Markdown", reply_markup=remove_keyboard)
@@ -41,7 +41,7 @@ def verification_complete(call):
         keyboard.add(item_change_name, item_schedule)
         bot.send_message(call.message.chat.id, "*Choose what to do next*", reply_markup=keyboard, parse_mode="Markdown")
     elif call.data == "no":
-        ask_for_name(call.message)
+        change_name(call.message)
     # delete message
     bot.delete_message(call.message.chat.id, call.message.message_id)
 
@@ -63,7 +63,7 @@ def buttons(message):
         bot.send_message(message.chat.id, "*CHOSEN ONES ARE THE BEST!*", parse_mode="Markdown")
     # ! change name
     elif message.text == "✒️ Change name":
-        ask_for_name(message)
+        change_name(message)
     # ! schedule
     elif message.text == "📰 Schedule":
         bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
