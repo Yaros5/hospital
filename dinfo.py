@@ -160,8 +160,7 @@ def botBook():
         closeAll()
         return
     global date, time, fullName
-    fullName = Customer.lastName + " \"" + \
-        Customer.firstName + "\" " + Customer.middleName
+    fullName = f"{Customer.lastName} {Customer.middleName} {Customer.firstName}"
     date = uiB.dateEdit.date().toString("dd.MM.yyyy")
     time = uiB.timeEdit.time().toString("hh:mm")
     closeAll()
