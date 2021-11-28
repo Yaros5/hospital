@@ -160,11 +160,17 @@ def botBook():
         closeAll()
         return
     global date, time, fullName
-    fullName = Customer.firstName + " \"" + \
-        Customer.middleName + "\" " + Customer.lastName
+    fullName = Customer.lastName + " \"" + \
+        Customer.firstName + "\" " + Customer.middleName
     date = uiB.dateEdit.date().toString("dd.MM.yyyy")
     time = uiB.timeEdit.time().toString("hh:mm")
     closeAll()
+    
+    toWrite = f"*Name:* {fullName}, *Date:* {date}, *Time:* {time}"
+    
+    f = open("apoInfo.txt", "w")
+    f.write(toWrite)
+    f.close()
 
 
 def closeAll():
