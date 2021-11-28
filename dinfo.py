@@ -113,12 +113,55 @@ MainWBook = QtWidgets.QMainWindow()
 uiB = Ui_MainWindow_B()
 uiB.setupUi(MainWBook)
 
+class Customer:
+    firstName = ''
+    lastName = ''
+    middleName = ''
+    birthdayDate = ''
+    phoneNumber = ''
+    email = ''
+    sex = ''
+
+    def updateTxt():
+        data = open("customers.txt","w")
+        data.write(Customer.firstName+"\n")
+        data.write(Customer.lastName+"\n")
+        data.write(Customer.middleName+"\n")
+        data.write(Customer.birthdayDate+"\n")
+        data.write(Customer.phoneNumber+"\n")
+        data.write(Customer.email+"\n")
+        data.write(Customer.sex+"\n")
+        data.close()
+        pass
+
+def Save():
+    Customer.lastName = ui.lineEdit_3.text()
+    Customer.firstName = ui.lineEdit_2.text()
+    Customer.middleName = ui.lineEdit_4.text()
+    Customer.birthdayDate = ui.lineEdit_5.text()
+    Customer.phoneNumber = ui.lineEdit_6.text()
+    Customer.email = ui.lineEdit_8.text()
+    Customer.sex = ui.comboBox.currentText()    
+    Customer.updateTxt()
+
+def checkIfDefault():
+    if ui.lineEdit_2.text() == "First name" or ui.lineEdit_3.text() == "Last name" or ui.lineEdit_4.text() == "Middle name" or ui.lineEdit_5.text() == "Date of birth" or ui.lineEdit_6.text() == "Phone number" or ui.lineEdit_8.text() == "Email":
+        return 1
+    else:
+        return 0
+
 def botBook():
     #id = 780892851
+    if checkIfDefault() == 1:
+        closeAll()
+        return
     global date, time, fullName
-    fullName = ui.lineEdit_2.text() + " " + ui.lineEdit_3.text() + " " + ui.lineEdit_4.text()
+    fullName = Customer.firstName + " \"" + Customer.middleName + "\" " + Customer.lastName
     date = uiB.dateEdit.date().toString("dd.MM.yyyy")
     time = uiB.timeEdit.time().toString("hh:mm")
+    closeAll()
+
+def closeAll():
     MainWBook.close()
     close1()
     close2()
@@ -302,6 +345,36 @@ def open19():
 
 def close19():
     MainW19.close()
+
+data = open("customers.txt","r")
+temp = data.read().splitlines()
+for i in range(len(temp)):
+    Customer.firstName = temp[i]
+    ui.lineEdit_2.setText(temp[i])
+    i+=1
+    Customer.lastName = temp[i]
+    ui.lineEdit_3.setText(temp[i])
+    i+=1
+    Customer.middleName = temp[i]
+    ui.lineEdit_4.setText(temp[i])
+    i+=1
+    Customer.birthdayDate = temp[i]
+    ui.lineEdit_5.setText(temp[i])
+    i+=1
+    Customer.phoneNumber = temp[i]
+    ui.lineEdit_6.setText(temp[i])
+    i+=1
+    Customer.email = temp[i]
+    ui.lineEdit_8.setText(temp[i])
+    i+=1
+    Customer.sex = temp[i]
+    ui.comboBox.setCurrentText(temp[i])
+    if not data.readline():
+        break
+
+data.close()
+
+ui.pushButton_3.clicked.connect(Save)
 
 ui.pushButton_5.clicked.connect(open1)
 ui.pushButton_6.clicked.connect(open2)
