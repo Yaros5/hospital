@@ -21,7 +21,6 @@ from doc17 import Ui_MainWindow_17
 from doc18 import Ui_MainWindow_18
 from doc19 import Ui_MainWindow_19
 from appointment import Ui_MainWindow_B
-#import customers
 
 # додаєм в проект стартовий файл
 app = QtWidgets.QApplication(sys.argv)
