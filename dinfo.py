@@ -165,12 +165,11 @@ def botBook():
     time = uiB.timeEdit.time().toString("hh:mm")
     closeAll()
     
-    toWrite = f"*Name:* {fullName}, *Date:* {date}, *Time:* {time}\n"
+    toWrite = f"*Name:* {fullName},\n*Date:* {date}, *Time:* {time}\n"
 
     file = open("apoInfo.txt", "a")
     file.write(toWrite)
     file.close()
-    print("asd")
 
 
 def closeAll():
@@ -1063,7 +1062,7 @@ def search():
 
         ui.pushButton_24.setText('')
         ui.pushButton_25.setText('')
-        ui.pushButton_4.setText('Нічого не знайдено')
+        ui.pushButton_4.setText('No such results')
         try:
             ui.pushButton_4.disconnect()
             ui.pushButton_24.disconnect()
