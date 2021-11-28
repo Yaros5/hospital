@@ -636,7 +636,7 @@ def search():
                             "  background: #F9DFF9;\n"
                             "}")
 
-        ui.pushButton_4.setText('Нічого не знайдено')
+        ui.pushButton_4.setText('No such results')
 
 # Функція пошуку
 

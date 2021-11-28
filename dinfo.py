@@ -159,17 +159,32 @@ def botBook():
     if checkIfDefault() == 1:
         closeAll()
         return
-    global date, time, fullName
+
     fullName = f"{Customer.lastName} {Customer.middleName} {Customer.firstName}"
     date = uiB.dateEdit.date().toString("dd.MM.yyyy")
     time = uiB.timeEdit.time().toString("hh:mm")
-    closeAll()
-    
-    toWrite = f"*Name:* {fullName}, *Date:* {date}, *Time:* {time}\n"
 
+    toWrite = f"*Name:* {fullName},\n*Date:* {date}, *Time:* {time}\n"
     fa = open("apoInfo.txt", "a")
     fa.write(toWrite)
     fa.close()
+
+    
+    closeAll()
+    
+    
+    # fr = open("apoInfo.txt", "r")
+    # file = fr.read()
+    # fr.close()
+    
+    # if file == None:
+    #     fw = open("apoInfo.txt", "w")
+    #     fw.write(toWrite)
+    #     fw.close()
+    # else:
+        # fa = open("apoInfo.txt", "a")
+        # fa.write(toWrite)
+        # fa.close()
 
 
 def closeAll():
