@@ -13,57 +13,61 @@ def start_message(message):
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
     bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
-    bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*", parse_mode="Markdown")
-    # / nickname
-    global id_from_bot
-    nickname_from_bot = message.from_user.first_name
-    print(f"User nickname: {nickname_from_bot}")
-    # / username
-    global id_from_bot
-    username_from_bot = message.from_user.username
-    print(f"User username: {username_from_bot}")
-    # / id
-    global id_from_bot
-    id_from_bot = message.from_user.id
-    print(f"User id: {id_from_bot}")
-    login_ask(message)
+
+    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    item_schedule = types.KeyboardButton("📰 Schedule")
+    keyboard.add(item_schedule)
+    bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*", parse_mode="Markdown", reply_markup=keyboard)
+    # # / nickname
+    # global id_from_bot
+    # nickname_from_bot = message.from_user.first_name
+    # print(f"User nickname: {nickname_from_bot}")
+    # # / username
+    # global id_from_bot
+    # username_from_bot = message.from_user.username
+    # print(f"User username: {username_from_bot}")
+    # # / id
+    # global id_from_bot
+    # id_from_bot = message.from_user.id
+    # print(f"User id: {id_from_bot}")
+    # login_ask(message)
 
 
-# ! login_ask
-def login_ask(message):
-    bot.send_message(message.chat.id, "Send me your *login*", parse_mode="Markdown")
-    # goto login_ask_complete
-    bot.register_next_step_handler(message, login_ask_complete)
-def login_ask_complete(message):
-    # / login
-    global login_from_bot
-    login_from_bot = message.text
-    print(f"User login: {login_from_bot}")
-    # goto password_ask
-    password_ask(message)
+# # ! login_ask
+# def login_ask(message):
+#     bot.send_message(message.chat.id, "Send me your *login*", parse_mode="Markdown")
+#     # goto login_ask_complete
+#     bot.register_next_step_handler(message, login_ask_complete)
+# def login_ask_complete(message):
+#     # / login
+#     global login_from_bot
+#     login_from_bot = message.text
+#     print(f"User login: {login_from_bot}")
+#     # goto password_ask
+#     password_ask(message)
 
 
-# ! password_ask
-def password_ask(message):
-    bot.send_message(message.chat.id, "Send me your *password*", parse_mode="Markdown")
-    # goto password_ask_complete
-    bot.register_next_step_handler(message, password_ask_complete)
-def password_ask_complete(message):
-    # / password
-    global password_from_bot
-    password_from_bot = message.text
-    print(f"User password: {password_from_bot}\n")
-    # goto database
-    database(message)
+# # ! password_ask
+# def password_ask(message):
+#     bot.send_message(message.chat.id, "Send me your *password*", parse_mode="Markdown")
+#     # goto password_ask_complete
+#     bot.register_next_step_handler(message, password_ask_complete)
+# def password_ask_complete(message):
+#     # / password
+#     global password_from_bot
+#     password_from_bot = message.text
+#     print(f"User password: {password_from_bot}\n")
+#     # goto database
+#     database(message)
 
 
-# ! database
-def database(message):
-    global db, sql
-    db = sqlite3.connect('server.db')
-    sql = db.cursor()
-    sql.execute('''CREATE TABLE IF NOT EXISTS users (login TEXT, password TEXT)''')
-    db.commit()
+# # ! database
+# def database(message):
+#     global db, sql
+#     db = sqlite3.connect('server.db')
+#     sql = db.cursor()
+#     sql.execute('''CREATE TABLE IF NOT EXISTS users (login TEXT, password TEXT)''')
+#     db.commit()
 
     # sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}"')
     # # sql.execute(f'SELECT telegramID FROM users WHERE telegramID = "{id_from_bot}"')
@@ -79,25 +83,25 @@ def database(message):
 
 
 
-    sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}" ')
-    if sql.fetchone() is None:
-        print("*[No such user]*")
-        bot.send_message(message.chat.id, "*[Such account already exists]*", parse_mode="Markdown")
-        login_ask(message)
+    # sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}" ')
+    # if sql.fetchone() is None:
+    #     print("*[No such user]*")
+    #     bot.send_message(message.chat.id, "*[Such account already exists]*", parse_mode="Markdown")
+    #     login_ask(message)
 
-    sql.execute(f'SELECT password FROM users WHERE password = "{password_from_bot}" ')
-    if sql.fetchone() is None:
-        print("*[Wrong password]*")
-        bot.send_message(message.chat.id, "*[Wrong password]*", parse_mode="Markdown")
-        login_ask(message)
+    # sql.execute(f'SELECT password FROM users WHERE password = "{password_from_bot}" ')
+    # if sql.fetchone() is None:
+    #     print("*[Wrong password]*")
+    #     bot.send_message(message.chat.id, "*[Wrong password]*", parse_mode="Markdown")
+    #     login_ask(message)
 
 
-# ! signup_complete
-def signup_complete(message):
-    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    item_schedule = types.KeyboardButton("📰 Schedule")
-    keyboard.add(item_schedule)
-    bot.send_message(message.chat.id, "Ok, I got it", parse_mode="Markdown", reply_markup=keyboard)
+# # ! signup_complete
+# def signup_complete(message):
+#     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+#     item_schedule = types.KeyboardButton("📰 Schedule")
+#     keyboard.add(item_schedule)
+#     bot.send_message(message.chat.id, "Ok, I got it", parse_mode="Markdown", reply_markup=keyboard)
 
 
 # ! buttons
