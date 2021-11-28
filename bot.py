@@ -1,8 +1,7 @@
-import logging
 from typing import ItemsView
 from telebot import types
 import telebot
-import sqlite3
+# import sqlite3
 
 TOKEN = "2142529380:AAH9OvlYi9zcii99FWijDrQiVhwGOjuFRn0"
 bot = telebot.TeleBot(TOKEN)
