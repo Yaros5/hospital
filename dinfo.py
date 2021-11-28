@@ -463,6 +463,9 @@ ui.pushButton_25.setStyleSheet("QPushButton {\n"
 
 
 def search():
+    ui.pushButton_4.disconnect()
+    ui.pushButton_24.disconnect()
+    ui.pushButton_25.disconnect()
     a = ui.lineEdit_46.text()
     place = binary_Search(list_doctor, a)
     if a in list_doctor:
@@ -531,506 +534,527 @@ def search():
 
         if a == 'Proctologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
-            ui.pushButton_4.setText('Brian Schneider')
+            ui.pushButton_4.setText('Rut Langer')
+            ui.pushButton_4.clicked.connect(open13)
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
         if a == 'Surgeon':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FAFAFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #FAFAFA;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Mathieu Nanni')
+            ui.pushButton_4.clicked.connect(open11)
             ui.pushButton_24.setText('Xenagoras Chaves')
+            ui.pushButton_24.clicked.connect(open19)
             ui.pushButton_25.setText('')
         if a == 'Ophthalmologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FAFAFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #FAFAFA;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Scarlet Neil')
+            ui.pushButton_4.clicked.connect(open15)
             ui.pushButton_24.setText('Widald Serra')
+            ui.pushButton_24.clicked.connect(open18)
             ui.pushButton_25.setText('')
 
         if a == 'Physician':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FAFAFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #FAFAFA;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Dimas Bergman')
+            ui.pushButton_4.clicked.connect(open6)
             ui.pushButton_24.setText('Armann Fujimoto')
+            ui.pushButton_24.clicked.connect(open2)
             ui.pushButton_25.setText('')
         if a == 'Urologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FAFAFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #FAFAFA;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Vanda Chester')
-            ui.pushButton_24.setText('Jennifer Kazlow')
+            ui.pushButton_4.clicked.connect(open16)
+            ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
 
         if a == 'Cardiologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FAFAFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #FAFAFA;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Kristian Trevis')
+            ui.pushButton_4.clicked.connect(open9)
             ui.pushButton_24.setText('Barnabas Budai')
+            ui.pushButton_24.clicked.connect(open3)
             ui.pushButton_25.setText('')
 
         if a == 'Endocrinologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Sarit Ridge')
+            ui.pushButton_4.clicked.connect(open14)
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
 
         if a == 'Neurologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Jennifer Kazlow')
+            ui.pushButton_4.clicked.connect(open8)
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
         if a == 'Oncologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Elo Carson')
+            ui.pushButton_4.clicked.connect(open7)
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
         if a == 'Dentist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
             ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FAFAFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #FAFAFA;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
             ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #FFA;\n"
-                                        "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #FFA;\n"
+                                           "}")
 
             ui.pushButton_4.setText('Vaughan Marinov')
+            ui.pushButton_4.clicked.connect(open17)
             ui.pushButton_24.setText('Nausikaa MacAslan')
+            ui.pushButton_24.clicked.connect(open12)
             ui.pushButton_25.setText('')
 
-        else:
-            ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #FFA;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+    else:
+        ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                      "  padding: 15px 30px;\n"
+                                      "  font-size: 16px;\n"
+                                      "  border-radius: 15px;\n"
+                                      "  background-color: #FFA;\n"
+                                      "  border: none;\n"
+                                      "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #f7f2f2;\n"
-                                        "}")
+                                      "}\n"
+                                      "\n"
+                                      "QPushButton:pressed {\n"
+                                      "  background: #f7f2f2;\n"
+                                      "}")
 
-            ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+        ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                       "  padding: 15px 30px;\n"
+                                       "  font-size: 16px;\n"
+                                       "  border-radius: 15px;\n"
+                                       "  background-color: #F9DFF9;\n"
+                                       "  border: none;\n"
+                                       "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
-            ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                        "  padding: 15px 30px;\n"
-                                        "  font-size: 16px;\n"
-                                        "  border-radius: 15px;\n"
-                                        "  background-color: #F9DFF9;\n"
-                                        "  border: none;\n"
-                                        "  color: #000;\n"
+                                       "}\n"
+                                       "\n"
+                                       "QPushButton:pressed {\n"
+                                       "  background: #F9DFF9;\n"
+                                       "}")
+        ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                       "  padding: 15px 30px;\n"
+                                       "  font-size: 16px;\n"
+                                       "  border-radius: 15px;\n"
+                                       "  background-color: #F9DFF9;\n"
+                                       "  border: none;\n"
+                                       "  color: #000;\n"
 
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "  background: #F9DFF9;\n"
-                                        "}")
+                                       "}\n"
+                                       "\n"
+                                       "QPushButton:pressed {\n"
+                                       "  background: #F9DFF9;\n"
+                                       "}")
 
-            ui.pushButton_4.setText('Нічого не знайдено')
+        ui.pushButton_24.setText('')
+        ui.pushButton_25.setText('')
+        ui.pushButton_4.setText('Нічого не знайдено')
+        ui.pushButton_4.clicked.connect(close1)
+        ui.pushButton_24.clicked.connect(close1)
+        ui.pushButton_25.clicked.connect(close1)
 
 # Функція пошуку
 
 
 data = open("customers.txt", "r")
 temp = data.read().splitlines()
+
 for i in range(len(temp)):
     Customer.firstName = temp[i]
     ui.lineEdit_2.setText(temp[i])
