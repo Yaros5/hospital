@@ -2,6 +2,7 @@ from typing import ItemsView
 from telebot import types
 import telebot
 import sqlite3
+from dinfo import botBook
 
 TOKEN = "2142529380:AAH9OvlYi9zcii99FWijDrQiVhwGOjuFRn0"
 bot = telebot.TeleBot(TOKEN)
@@ -34,7 +35,16 @@ def password_ask(message):
     global password_from_bot
     password_from_bot = message.text
     print(f"User password from bot: {password_from_bot}")
+    # goto login complete
+    bot.register_next_step_handler(message, login_complete)
 
+# ! login_complete
+@bot.message_handler(content_types=["text"])
+def login_complete(message):
+    keyboard = types.ReplyKeyboardMarkup()
+    item_schedule = types.KeyboardButton("📰 Schedule")
+    keyboard.add(item_schedule)
+    bot.send_message(message.chat.id, "Ok, I got it", parse_mode="Markdown", reply_markup=keyboard)
 
 
 
@@ -95,11 +105,7 @@ def buttons(message):
     # ! schedule
     elif message.text == "📰 Schedule":
         bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
-        # example
-        
-        bot.send_message(message.chat.id, "Date: {}")
-        bot.send_message(message.chat.id, "Patient 2")
-        bot.send_message(message.chat.id, "Patient 3")
+        bot.send_message(message.chat.id, "Full Name:{fullname}\nDate: {date}\nTime: {time}")
 
 
 # ! polling
