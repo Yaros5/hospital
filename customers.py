@@ -11,76 +11,65 @@ ui = Ui_MainWindow()
 ui.setupUi(MainWindow)
 MainWindow.show()
 
-# getting current login from logging in
-currentLogin = "Huntah_Svoboda"
-
 # Прописуєм логіку кнопки
 
 class Customer:
-    login = []
-    password = []
-    firstName = []
-    lastName = []
-    middleName = []
-    birthdayDate = []
-    phoneNumber = []
-    email = []
-    sex = []
+    firstName = ''
+    lastName = ''
+    middleName = ''
+    birthdayDate = ''
+    phoneNumber = ''
+    email = ''
+    sex = ''
 
     def updateTxt():
         data = open("customers.txt","w")
-        for item in range(len(Customer.login)):
-            data.write(Customer.firstName[item]+"\n")
-            data.write(Customer.lastName[item]+"\n")
-            data.write(Customer.middleName[item]+"\n")
-            data.write(Customer.birthdayDate[item]+"\n")
-            data.write(Customer.phoneNumber[item]+"\n")
-            data.write(Customer.email[item]+"\n")
-            data.write(Customer.sex[item]+"\n")
-            data.write(Customer.password[item]+"\n")
+        data.write(Customer.firstName+"\n")
+        data.write(Customer.lastName+"\n")
+        data.write(Customer.middleName+"\n")
+        data.write(Customer.birthdayDate+"\n")
+        data.write(Customer.phoneNumber+"\n")
+        data.write(Customer.email+"\n")
+        data.write(Customer.sex+"\n")
         data.close()
         pass
 
 def Save():
-    Customer.lastName[index] = ui.lineEdit_2.text()
-    Customer.firstName[index] = ui.lineEdit_3.text()
-    Customer.middleName[index] = ui.lineEdit_4.text()
-    Customer.birthdayDate[index] = ui.lineEdit_5.text()
-    Customer.phoneNumber[index] = ui.lineEdit_6.text()
-    Customer.email[index] = ui.lineEdit_8.text()
-    Customer.sex[index] = ui.comboBox.currentText()    
+    Customer.lastName = ui.lineEdit_3.text()
+    Customer.firstName = ui.lineEdit_2.text()
+    Customer.middleName = ui.lineEdit_4.text()
+    Customer.birthdayDate = ui.lineEdit_5.text()
+    Customer.phoneNumber = ui.lineEdit_6.text()
+    Customer.email = ui.lineEdit_8.text()
+    Customer.sex = ui.comboBox.currentText()    
     Customer.updateTxt()
 
 data = open("customers.txt","r")
 temp = data.read().splitlines()
 for i in range(len(temp)):
-    Customer.firstName.append(temp[i])
-    ui.lineEdit_3.setText(temp[i])
-    i+=1
-    Customer.lastName.append(temp[i])
+    Customer.firstName = temp[i]
     ui.lineEdit_2.setText(temp[i])
     i+=1
-    Customer.middleName.append(temp[i])
+    Customer.lastName = temp[i]
+    ui.lineEdit_3.setText(temp[i])
+    i+=1
+    Customer.middleName = temp[i]
     ui.lineEdit_4.setText(temp[i])
     i+=1
-    Customer.birthdayDate.append(temp[i])
+    Customer.birthdayDate = temp[i]
     ui.lineEdit_5.setText(temp[i])
     i+=1
-    Customer.phoneNumber.append(temp[i])
+    Customer.phoneNumber = temp[i]
     ui.lineEdit_6.setText(temp[i])
     i+=1
-    Customer.email.append(temp[i])
+    Customer.email = temp[i]
     ui.lineEdit_8.setText(temp[i])
     i+=1
-    Customer.sex.append(temp[i])
+    Customer.sex = temp[i]
     ui.comboBox.setCurrentText(temp[i])
-    i+=1
-    Customer.password.append(temp[i])
-    i+=1
-    Customer.login.append(Customer.firstName[-1] + "_" + Customer.lastName[-1])
     if not data.readline():
         break
-index = Customer.login.index(currentLogin)
+
 data.close()
 
 ui.pushButton_3.clicked.connect(Save)
