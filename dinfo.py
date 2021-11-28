@@ -527,502 +527,502 @@ def search():
             ui.pushButton_25.setText('Cili Kipling')
             ui.pushButton_25.clicked.connect(open5)
 
-    if a == 'Proctologist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+        if a == 'Proctologist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Brian Schneider')
-        ui.pushButton_24.setText('')
-        ui.pushButton_25.setText('')
-    if a == 'Surgeon':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+            ui.pushButton_4.setText('Brian Schneider')
+            ui.pushButton_24.setText('')
+            ui.pushButton_25.setText('')
+        if a == 'Surgeon':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #FAFAFA;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FAFAFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Mathieu Nanni')
-        ui.pushButton_24.setText('Xenagoras Chaves')
-        ui.pushButton_25.setText('')
-    if a == 'Ophthalmologist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+            ui.pushButton_4.setText('Mathieu Nanni')
+            ui.pushButton_24.setText('Xenagoras Chaves')
+            ui.pushButton_25.setText('')
+        if a == 'Ophthalmologist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #FAFAFA;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FAFAFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Scarlet Neil')
-        ui.pushButton_24.setText('Widald Serra')
-        ui.pushButton_25.setText('')
+            ui.pushButton_4.setText('Scarlet Neil')
+            ui.pushButton_24.setText('Widald Serra')
+            ui.pushButton_25.setText('')
 
-    if a == 'Physician':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+        if a == 'Physician':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #FAFAFA;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FAFAFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Dimas Bergman')
-        ui.pushButton_24.setText('Armann Fujimoto')
-        ui.pushButton_25.setText('')
-    if a == 'Urologist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+            ui.pushButton_4.setText('Dimas Bergman')
+            ui.pushButton_24.setText('Armann Fujimoto')
+            ui.pushButton_25.setText('')
+        if a == 'Urologist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #FAFAFA;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FAFAFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Vanda Chester')
-        ui.pushButton_24.setText('Jennifer Kazlow')
-        ui.pushButton_25.setText('')
+            ui.pushButton_4.setText('Vanda Chester')
+            ui.pushButton_24.setText('Jennifer Kazlow')
+            ui.pushButton_25.setText('')
 
-    if a == 'Cardiologist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+        if a == 'Cardiologist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #FAFAFA;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FAFAFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #f7f2f2;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Kristian Trevis')
-        ui.pushButton_24.setText('Barnabas Budai')
-        ui.pushButton_25.setText('')
+            ui.pushButton_4.setText('Kristian Trevis')
+            ui.pushButton_24.setText('Barnabas Budai')
+            ui.pushButton_25.setText('')
 
-    if a == 'Endocrinologist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+        if a == 'Endocrinologist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Sarit Ridge')
-        ui.pushButton_24.setText('')
-        ui.pushButton_25.setText('')
+            ui.pushButton_4.setText('Sarit Ridge')
+            ui.pushButton_24.setText('')
+            ui.pushButton_25.setText('')
 
-    if a == 'Neurologist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+        if a == 'Neurologist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Jennifer Kazlow')
-        ui.pushButton_24.setText('')
-        ui.pushButton_25.setText('')
-    if a == 'Oncologist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+            ui.pushButton_4.setText('Jennifer Kazlow')
+            ui.pushButton_24.setText('')
+            ui.pushButton_25.setText('')
+        if a == 'Oncologist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Elo Carson')
-        ui.pushButton_24.setText('')
-        ui.pushButton_25.setText('')
-    if a == 'Dentist':
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+            ui.pushButton_4.setText('Elo Carson')
+            ui.pushButton_24.setText('')
+            ui.pushButton_25.setText('')
+        if a == 'Dentist':
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #FAFAFA;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FAFAFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #FFA;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #FFA;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Vaughan Marinov')
-        ui.pushButton_24.setText('Nausikaa MacAslan')
-        ui.pushButton_25.setText('')
+            ui.pushButton_4.setText('Vaughan Marinov')
+            ui.pushButton_24.setText('Nausikaa MacAslan')
+            ui.pushButton_25.setText('')
 
-    else:
-        ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+        else:
+            ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #FFA;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #f7f2f2;\n"
+                                        "}")
 
-        ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+            ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
-        ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
+            ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                        "  padding: 15px 30px;\n"
+                                        "  font-size: 16px;\n"
+                                        "  border-radius: 15px;\n"
+                                        "  background-color: #F9DFF9;\n"
+                                        "  border: none;\n"
+                                        "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                        "}\n"
+                                        "\n"
+                                        "QPushButton:pressed {\n"
+                                        "  background: #F9DFF9;\n"
+                                        "}")
 
-        ui.pushButton_4.setText('Нічого не знайдено')
+            ui.pushButton_4.setText('Нічого не знайдено')
 
 # Функція пошуку
 
