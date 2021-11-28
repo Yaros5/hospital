@@ -12,34 +12,50 @@ bot = telebot.TeleBot(TOKEN)
 def start_message(message):
     # remove keyboard
     remove_keyboard = types.ReplyKeyboardRemove()
-    bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()),
-                     reply_markup=remove_keyboard, parse_mode="Markdown")
-    bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*",
-                     parse_mode="Markdown")
-    change_name(message)
+    bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
+    bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*", parse_mode="Markdown")
+    
+
+    bot.register_next_step_handler(message, login_ask)
 
 
-# ! change name
-def change_name(message):
-    # remove keyboard
-    remove_keyboard = types.ReplyKeyboardRemove()
-    msg = bot.send_message(message.chat.id, "Send me your *full name*", parse_mode="Markdown",
-                           reply_markup=remove_keyboard)
-    bot.register_next_step_handler(msg, verification)
+@bot.message_handler(content_types=["text"])
+def login_ask(message):
+    bot.send_message(message.chat.id, "Send me your *login*", parse_mode="Markdown")
+    global login_from_bot
+    login_from_bot = message.text
+    print(f"User login from bot: {login_from_bot}")
+
+    bot.register_next_step_handler(message, password_ask)
+
+
+@bot.message_handler(content_types=["text"])
+def password_ask(message):
+    bot.send_message(message.chat.id, "Send me your *password*", parse_mode="Markdown")
+    global password_from_bot
+    password_from_bot = message.text
+    print(f"User password from bot: {password_from_bot}")
+
+
 
 
 # ! verification
 def verification(message):
-    bot.send_message(message.chat.id, f"*Your name is {message.text}*", parse_mode="Markdown")
+    pass
+    # bot.send_message(message.chat.id, f"*Your name is {message.text}*", parse_mode="Markdown")
 
-    # # / login
+    # / login
     # global login_from_bot
     # login_from_bot = message.text
     # print(f"User login from bot: {login_from_bot}")
-    # / id
-    global id_from_bot
-    id_from_bot = message.from_user.id
-    print(f"User id from bot: {id_from_bot}")
+    # / password
+    # global password_from_bot
+    # password_from_bot = message.text
+    # print(f"User password from bot: {password_from_bot}")
+    # # / id
+    # global id_from_bot
+    # id_from_bot = message.from_user.id
+    # print(f"User id from bot: {id_from_bot}")
 
     # ! database
     # global db, sql
@@ -77,9 +93,6 @@ def buttons(message):
     elif message.text == "CHOSEN ONES":
         bot.delete_message(message.chat.id, message.message_id)
         bot.send_message(message.chat.id, "*CHOSEN ONES ARE THE BEST!*", parse_mode="Markdown")
-    # ! change name
-    elif message.text == "✒️ Change name":
-        change_name(message)
     # ! schedule
     elif message.text == "📰 Schedule":
         bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
