@@ -40,7 +40,6 @@ list_specification = ['ENT-doctor', 'Proctologist', 'Surgeon', 'Ophthalmologist'
                       'Urologist', 'Cardiologist', 'Endocrinologist', 'Neurologist',
                       'Oncologist', 'Dentist']
 
-print(len(list_doctor))
 ui.pushButton_4.setStyleSheet("QPushButton {\n"
                               "  padding: 15px 30px;\n"
                               "  font-size: 16px;\n"
@@ -83,7 +82,7 @@ ui.pushButton_25.setStyleSheet("QPushButton {\n"
 
 
 def search():
-    a = ui.lineEdit.text()
+    a = ui.lineEdit_46.text()
     place = binary_Search(list_doctor, a)
     if a in list_doctor:
         ui.pushButton_4.setText(f'Doctor {a} ')
@@ -648,7 +647,7 @@ def search():
 # Функція пошуку
 
 
-ui.pushButton_2.clicked.connect(search)
+ui.pushButton_26.clicked.connect(search)
 
 MainWindow.show()
 sys.exit(app.exec_())

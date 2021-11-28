@@ -1069,7 +1069,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "Search for doctors online"))
         self.label_2.setText(_translate("MainWindow", "Make an appointment without leaving home"))
-        self.lineEdit_46.setPlaceholderText(_translate("MainWindow", "Enter a last name or specialty "))
+        self.lineEdit_46.setPlaceholderText(_translate("MainWindow", "Enter the last name or specialty "))
         self.pushButton_26.setText(_translate("MainWindow", "Find"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Main Page"))
         self.lineEdit_23.setText(_translate("MainWindow", "Neurologist"))
