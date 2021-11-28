@@ -84,7 +84,7 @@ def buttons(message):
     # ! schedule
     elif message.text == "📰 Schedule":
         bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
-        bot.send_message(message.chat.id, "Full Name: fullName\nDate: date\nTime: time")
+        bot.send_message(message.chat.id, "*Full Name:* fullName\n*Date:* date\n*Time:* time", parse_mode="Markdown")
 
 # ! database
 def database(message):
