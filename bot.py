@@ -87,13 +87,10 @@ def buttons(message):
         bot.send_message(message.chat.id, "*Full Name:* fullName\n*Date:* date\n*Time:* time", parse_mode="Markdown")
 
 
-f = open("apoInfo.txt", "r")
-toRead = f.read()
-f.close()
-
-def asd():
-    while True:
-        if 
+fr = open("apoInfo.txt", "r")
+toRead = fr.read()
+print(toRead)
+fr.close()
 
 
 # ! database
