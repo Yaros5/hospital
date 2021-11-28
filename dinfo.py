@@ -483,6 +483,7 @@ def search():
                                       "QPushButton:pressed {\n"
                                       "  background: #f7f2f2;\n"
                                       "}")
+        
     if a in list_specification:
         if a == 'ENT-doctor':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
