@@ -14,21 +14,20 @@ def start_message(message):
     remove_keyboard = types.ReplyKeyboardRemove()
     bot.send_message(message.chat.id, "*Hello, {0.first_name} 👋*".format(message.from_user, bot.get_me()), reply_markup=remove_keyboard, parse_mode="Markdown")
     bot.send_message(message.chat.id, "*If you are a doctor, then you can view the schedule of your patients here*", parse_mode="Markdown")
-    
-
+    # goto login_ask
     bot.register_next_step_handler(message, login_ask)
 
-
+# ! login_ask
 @bot.message_handler(content_types=["text"])
 def login_ask(message):
     bot.send_message(message.chat.id, "Send me your *login*", parse_mode="Markdown")
     global login_from_bot
     login_from_bot = message.text
     print(f"User login from bot: {login_from_bot}")
-
+    # goto password_ask
     bot.register_next_step_handler(message, password_ask)
 
-
+# ! password_ask
 @bot.message_handler(content_types=["text"])
 def password_ask(message):
     bot.send_message(message.chat.id, "Send me your *password*", parse_mode="Markdown")
