@@ -21,7 +21,7 @@ from doc17 import Ui_MainWindow_17
 from doc18 import Ui_MainWindow_18
 from doc19 import Ui_MainWindow_19
 from appointment import Ui_MainWindow_B
-import bot
+#import customers
 
 # додаєм в проект стартовий файл
 app = QtWidgets.QApplication(sys.argv)
@@ -115,7 +115,10 @@ uiB.setupUi(MainWBook)
 
 def botBook():
     #id = 780892851
-    bot.bot.send_message(780892851, "*A new appointment has been created!*", parse_mode="Markdown")
+    fullName = ui.lineEdit_2.text() + " " + ui.lineEdit_3.text() + " " + ui.lineEdit_4.text()
+    date = uiB.dateEdit.date().toString("dd.MM.yyyy")
+    time = uiB.timeEdit.time().toString("hh:mm")
+    print(date, time, fullName)
     MainWBook.close()
     close1()
     close2()
