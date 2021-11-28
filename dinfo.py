@@ -115,6 +115,7 @@ uiB.setupUi(MainWBook)
 
 def botBook():
     #id = 780892851
+    global date, time, fullName
     fullName = ui.lineEdit_2.text() + " " + ui.lineEdit_3.text() + " " + ui.lineEdit_4.text()
     date = uiB.dateEdit.date().toString("dd.MM.yyyy")
     time = uiB.timeEdit.time().toString("hh:mm")
@@ -138,6 +139,9 @@ def botBook():
     close17()
     close18()
     close19()
+
+def func():
+    return date, time, fullName
 
 def book():
     MainWBook.show()
