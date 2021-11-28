@@ -167,18 +167,9 @@ def botBook():
     
     toWrite = f"*Name:* {fullName}, *Date:* {date}, *Time:* {time}\n"
 
-    fw = open("apoInfo.txt", "r")
-    file = fw.read()
-    fw.close()
-    
-    if file == None:
-        fw = open("apoInfo.txt", "w")
-        fw.write(toWrite)
-        fw.close()
-    else:
-        fw = open("apoInfo.txt", "a")
-        fw.write(toWrite)
-        fw.close()
+    fa = open("apoInfo.txt", "a")
+    fa.write(toWrite)
+    fa.close()
 
 
 def closeAll():
