@@ -83,11 +83,15 @@ def buttons(message):
         bot.send_message(message.chat.id, "*CHOSEN ONES ARE THE BEST!*", parse_mode="Markdown")
     # ! schedule
     elif message.text == "📰 Schedule":
-        f = open("apoInfo.txt", "r")
-        f.write(toWrite)
-        f.close()
         bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
-        bot.send_message(message.chat.id, asd, parse_mode="Markdown")
+        bot.send_message(message.chat.id, "*Full Name:* fullName\n*Date:* date\n*Time:* time", parse_mode="Markdown")
+
+
+fr = open("apoInfo.txt", "r")
+toRead = fr.read()
+print(toRead)
+fr.close()
+
 
 # ! database
 def database(message):
