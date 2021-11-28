@@ -4,7 +4,6 @@ from telebot import types
 import telebot
 import sqlite3
 
-
 TOKEN = "2142529380:AAH9OvlYi9zcii99FWijDrQiVhwGOjuFRn0"
 bot = telebot.TeleBot(TOKEN)
 
@@ -34,7 +33,7 @@ def start_message(message):
 # ! login_ask
 def login_ask(message):
     bot.send_message(message.chat.id, "Send me your *login*", parse_mode="Markdown")
-    # goto password_ask
+    # goto login_ask_complete
     bot.register_next_step_handler(message, login_ask_complete)
 @bot.message_handler(content_types=["text"])
 def login_ask_complete(message):
@@ -42,13 +41,14 @@ def login_ask_complete(message):
     global login_from_bot
     login_from_bot = message.text
     print(f"User login: {login_from_bot}")
+    # goto password_ask
     password_ask(message)
 
 
 # ! password_ask
 def password_ask(message):
     bot.send_message(message.chat.id, "Send me your *password*", parse_mode="Markdown")
-    # goto password_ask
+    # goto password_ask_complete
     bot.register_next_step_handler(message, password_ask_complete)
 @bot.message_handler(content_types=["text"])
 def password_ask_complete(message):
@@ -56,6 +56,7 @@ def password_ask_complete(message):
     global password_from_bot
     password_from_bot = message.text
     print(f"User password: {password_from_bot}\n")
+    # goto signup_complete
     signup_complete(message)
 
 
