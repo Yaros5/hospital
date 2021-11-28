@@ -170,6 +170,7 @@ def botBook():
     file = open("apoInfo.txt", "a")
     file.write(toWrite)
     file.close()
+    print("asd")
 
 
 def closeAll():
