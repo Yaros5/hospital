@@ -9,12 +9,6 @@ MainWindow = PyQt5.QtWidgets.QMainWindow()
 ui = Ui_MainWindow()
 ui.setupUi(MainWindow)
 
-
-def doctor():
-    pass
-    # open new window
-
-
 def binary_Search(list, item):
     low = 0
     high = len(list) - 1
@@ -599,50 +593,50 @@ def search():
         ui.pushButton_25.setText('')
 
 
-# else:
-#     ui.pushButton_4.setStyleSheet("QPushButton {\n"
-#                               "  padding: 15px 30px;\n"
-#                               "  font-size: 16px;\n"
-#                               "  border-radius: 15px;\n"
-#                               "  background-color: #FFA;\n"
-#                               "  border: none;\n"
-#                               "  color: #000;\n"
-#
-#                               "}\n"
-#                               "\n"
-#                               "QPushButton:pressed {\n"
-#                               "  background: #f7f2f2;\n"
-#                               "}")
-#
-#
-#     ui.pushButton_24.setStyleSheet("QPushButton {\n"
-#                            "  padding: 15px 30px;\n"
-#                            "  font-size: 16px;\n"
-#                            "  border-radius: 15px;\n"
-#                            "  background-color: #F9DFF9;\n"
-#                            "  border: none;\n"
-#                            "  color: #000;\n"
-#
-#                            "}\n"
-#                            "\n"
-#                            "QPushButton:pressed {\n"
-#                            "  background: #F9DFF9;\n"
-#                            "}")
-#     ui.pushButton_25.setStyleSheet("QPushButton {\n"
-#                            "  padding: 15px 30px;\n"
-#                            "  font-size: 16px;\n"
-#                            "  border-radius: 15px;\n"
-#                            "  background-color: #F9DFF9;\n"
-#                            "  border: none;\n"
-#                            "  color: #000;\n"
-#
-#                            "}\n"
-#                            "\n"
-#                            "QPushButton:pressed {\n"
-#                            "  background: #F9DFF9;\n"
-#                            "}")
-#
-#     # ui.pushButton_4.setText('Нічого не знайдено')
+    else:
+        ui.pushButton_4.setStyleSheet("QPushButton {\n"
+                               "  padding: 15px 30px;\n"
+                               "  font-size: 16px;\n"
+                               "  border-radius: 15px;\n"
+                               "  background-color: #FFA;\n"
+                               "  border: none;\n"
+                               "  color: #000;\n"
+
+                               "}\n"
+                               "\n"
+                               "QPushButton:pressed {\n"
+                               "  background: #f7f2f2;\n"
+                               "}")
+
+
+        ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                            "  padding: 15px 30px;\n"
+                            "  font-size: 16px;\n"
+                            "  border-radius: 15px;\n"
+                            "  background-color: #F9DFF9;\n"
+                            "  border: none;\n"
+                            "  color: #000;\n"
+
+                            "}\n"
+                            "\n"
+                            "QPushButton:pressed {\n"
+                            "  background: #F9DFF9;\n"
+                            "}")
+        ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                            "  padding: 15px 30px;\n"
+                            "  font-size: 16px;\n"
+                            "  border-radius: 15px;\n"
+                            "  background-color: #F9DFF9;\n"
+                            "  border: none;\n"
+                            "  color: #000;\n"
+
+                            "}\n"
+                            "\n"
+                            "QPushButton:pressed {\n"
+                            "  background: #F9DFF9;\n"
+                            "}")
+
+        ui.pushButton_4.setText('Нічого не знайдено')
 
 # Функція пошуку
 
