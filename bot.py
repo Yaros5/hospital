@@ -2,10 +2,12 @@ from typing import ItemsView
 from telebot import types
 import telebot
 # import sqlite3
+import os
+import shutil
+import time
 
 TOKEN = "2142529380:AAH9OvlYi9zcii99FWijDrQiVhwGOjuFRn0"
 bot = telebot.TeleBot(TOKEN)
-
 
 # ! start
 @bot.message_handler(commands=["start", "help"])
@@ -84,35 +86,12 @@ def buttons(message):
     # ! schedule
     elif message.text == "📰 Schedule":
         bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
-        bot.send_message(message.chat.id, "*Full Name:* fullName\n*Date:* date\n*Time:* time", parse_mode="Markdown")
-
-
-fr = open("apoInfo.txt", "r")
-toRead = fr.read()
-print(toRead)
-fr.close()
-
-
-# ! database
-def database(message):
-    pass
-    # ! database
-    # global db, sql
-    # db = sqlite3.connect('server.db')
-    # sql = db.cursor()
-    # sql.execute('''CREATE TABLE IF NOT EXISTS users (login TEXT, telegramID TEXT)''')
-    # db.commit()
-
-    # sql.execute(f'SELECT login FROM users WHERE login = "{login_from_bot}"')
-    # sql.execute(f'SELECT telegramID FROM users WHERE telegramID = "{id_from_bot}"')
-    # if sql.fetchone() is None:
-    #     sql.execute(f"INSERT INTO users VALUES (?, ?)", (login_from_bot, id_from_bot))
-    #     db.commit()
-    #     print("[Вас успішно зареєстровано]\n")
-    #     bot.send_message(message.chat.id, "*[Вас успішно зареєстровано]*", parse_mode="Markdown")
-    # else:
-    #     print("[Такий акаунт вже існує]\n")
-    #     bot.send_message(message.chat.id, "*[Такий акаунт вже існує]*", parse_mode="Markdown")
+        fr = open("apoInfo.txt", "r")
+        toRead = fr.read()
+        print(toRead)
+        fr.close()
+        bot.send_message(message.chat.id, toRead, parse_mode="Markdown")
+        # bot.send_message(message.chat.id, "*Name:* fullName, *Date:* date, *Time:* time", parse_mode="Markdown")
 
 
 # ! polling
