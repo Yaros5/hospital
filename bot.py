@@ -87,10 +87,10 @@ while True:
         # ! schedule
         elif message.text == "📰 Schedule":
             bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
-            fr = open("apoInfo.txt", "r")
-            toRead = fr.read()
+            file = open("apoInfo.txt", "r")
+            toRead = file.read()
             print(toRead)
-            fr.close()
+            file.close()
             bot.send_message(message.chat.id, toRead, parse_mode="Markdown")
             # bot.send_message(message.chat.id, "*Name:* fullName, *Date:* date, *Time:* time", parse_mode="Markdown")
 
