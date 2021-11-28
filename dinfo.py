@@ -113,6 +113,7 @@ MainWBook = QtWidgets.QMainWindow()
 uiB = Ui_MainWindow_B()
 uiB.setupUi(MainWBook)
 
+
 class Customer:
     firstName = ''
     lastName = ''
@@ -123,7 +124,7 @@ class Customer:
     sex = ''
 
     def updateTxt():
-        data = open("customers.txt","w")
+        data = open("customers.txt", "w")
         data.write(Customer.firstName+"\n")
         data.write(Customer.lastName+"\n")
         data.write(Customer.middleName+"\n")
@@ -134,6 +135,7 @@ class Customer:
         data.close()
         pass
 
+
 def Save():
     Customer.lastName = ui.lineEdit_3.text()
     Customer.firstName = ui.lineEdit_2.text()
@@ -141,8 +143,9 @@ def Save():
     Customer.birthdayDate = ui.lineEdit_5.text()
     Customer.phoneNumber = ui.lineEdit_6.text()
     Customer.email = ui.lineEdit_8.text()
-    Customer.sex = ui.comboBox.currentText()    
+    Customer.sex = ui.comboBox.currentText()
     Customer.updateTxt()
+
 
 def checkIfDefault():
     if ui.lineEdit_2.text() == "First name" or ui.lineEdit_3.text() == "Last name" or ui.lineEdit_4.text() == "Middle name" or ui.lineEdit_5.text() == "Date of birth" or ui.lineEdit_6.text() == "Phone number" or ui.lineEdit_8.text() == "Email":
@@ -150,16 +153,19 @@ def checkIfDefault():
     else:
         return 0
 
+
 def botBook():
     #id = 780892851
     if checkIfDefault() == 1:
         closeAll()
         return
     global date, time, fullName
-    fullName = Customer.firstName + " \"" + Customer.middleName + "\" " + Customer.lastName
+    fullName = Customer.firstName + " \"" + \
+        Customer.middleName + "\" " + Customer.lastName
     date = uiB.dateEdit.date().toString("dd.MM.yyyy")
     time = uiB.timeEdit.time().toString("hh:mm")
     closeAll()
+
 
 def closeAll():
     MainWBook.close()
@@ -183,165 +189,206 @@ def closeAll():
     close18()
     close19()
 
+
 def func():
     return date, time, fullName
+
 
 def book():
     MainWBook.show()
     uiB.pushButton_2.clicked.connect(closeB)
     uiB.pushButton_1.clicked.connect(botBook)
 
+
 def closeB():
     MainWBook.close()
+
 
 def open1():
     MainW1.show()
     ui1.pushButton_1.clicked.connect(close1)
     ui1.pushButton_2.clicked.connect(book)
 
+
 def close1():
     MainW1.close()
+
 
 def open2():
     MainW2.show()
     ui2.pushButton_1.clicked.connect(close2)
     ui2.pushButton_2.clicked.connect(book)
 
+
 def close2():
     MainW2.close()
+
 
 def open3():
     MainW3.show()
     ui3.pushButton_1.clicked.connect(close3)
     ui3.pushButton_2.clicked.connect(book)
 
+
 def close3():
     MainW3.close()
+
 
 def open4():
     MainW4.show()
     ui4.pushButton_1.clicked.connect(close4)
     ui4.pushButton_2.clicked.connect(book)
 
+
 def close4():
-    MainW4.close() 
+    MainW4.close()
+
 
 def open5():
     MainW5.show()
     ui5.pushButton_1.clicked.connect(close5)
     ui5.pushButton_2.clicked.connect(book)
 
+
 def close5():
     MainW5.close()
+
 
 def open6():
     MainW6.show()
     ui6.pushButton_1.clicked.connect(close6)
     ui6.pushButton_2.clicked.connect(book)
 
+
 def close6():
-    MainW6.close() 
+    MainW6.close()
+
 
 def open7():
     MainW7.show()
     ui7.pushButton_1.clicked.connect(close7)
     ui7.pushButton_2.clicked.connect(book)
 
+
 def close7():
-    MainW7.close() 
+    MainW7.close()
+
 
 def open8():
     MainW8.show()
     ui8.pushButton_1.clicked.connect(close8)
     ui8.pushButton_2.clicked.connect(book)
 
+
 def close8():
     MainW8.close()
+
 
 def open9():
     MainW9.show()
     ui9.pushButton_1.clicked.connect(close9)
     ui9.pushButton_2.clicked.connect(book)
 
+
 def close9():
     MainW9.close()
+
 
 def open10():
     MainW10.show()
     ui10.pushButton_1.clicked.connect(close10)
     ui10.pushButton_2.clicked.connect(book)
 
+
 def close10():
     MainW10.close()
+
 
 def open11():
     MainW11.show()
     ui11.pushButton_1.clicked.connect(close11)
     ui11.pushButton_2.clicked.connect(book)
 
+
 def close11():
     MainW11.close()
+
 
 def open12():
     MainW12.show()
     ui12.pushButton_1.clicked.connect(close12)
     ui12.pushButton_2.clicked.connect(book)
 
+
 def close12():
     MainW12.close()
+
 
 def open13():
     MainW13.show()
     ui13.pushButton_1.clicked.connect(close13)
     ui13.pushButton_2.clicked.connect(book)
 
+
 def close13():
     MainW13.close()
+
 
 def open14():
     MainW14.show()
     ui14.pushButton_1.clicked.connect(close14)
     ui14.pushButton_2.clicked.connect(book)
 
+
 def close14():
     MainW14.close()
+
 
 def open15():
     MainW15.show()
     ui15.pushButton_1.clicked.connect(close15)
     ui15.pushButton_2.clicked.connect(book)
 
+
 def close15():
     MainW15.close()
+
 
 def open16():
     MainW16.show()
     ui16.pushButton_1.clicked.connect(close16)
     ui16.pushButton_2.clicked.connect(book)
 
+
 def close16():
     MainW16.close()
+
 
 def open17():
     MainW17.show()
     ui17.pushButton_1.clicked.connect(close17)
     ui17.pushButton_2.clicked.connect(book)
 
+
 def close17():
     MainW17.close()
+
 
 def open18():
     MainW18.show()
     ui18.pushButton_1.clicked.connect(close18)
     ui18.pushButton_2.clicked.connect(book)
 
+
 def close18():
     MainW18.close()
+
 
 def open19():
     MainW19.show()
     ui19.pushButton_1.clicked.connect(close19)
     ui19.pushButton_2.clicked.connect(book)
+
 
 def close19():
     MainW19.close()
@@ -903,106 +950,104 @@ def search():
                                       "}")
 
         ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                   "  padding: 15px 30px;\n"
-                                   "  font-size: 16px;\n"
-                                   "  border-radius: 15px;\n"
-                                   "  background-color: #FAFAFA;\n"
-                                   "  border: none;\n"
-                                   "  color: #000;\n"
+                                       "  padding: 15px 30px;\n"
+                                       "  font-size: 16px;\n"
+                                       "  border-radius: 15px;\n"
+                                       "  background-color: #FAFAFA;\n"
+                                       "  border: none;\n"
+                                       "  color: #000;\n"
 
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:pressed {\n"
-                                   "  background: #F9DFF9;\n"
-                                   "}")
+                                       "}\n"
+                                       "\n"
+                                       "QPushButton:pressed {\n"
+                                       "  background: #F9DFF9;\n"
+                                       "}")
         ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                   "  padding: 15px 30px;\n"
-                                   "  font-size: 16px;\n"
-                                   "  border-radius: 15px;\n"
-                                   "  background-color: #F9DFF9;\n"
-                                   "  border: none;\n"
-                                   "  color: #000;\n"
+                                       "  padding: 15px 30px;\n"
+                                       "  font-size: 16px;\n"
+                                       "  border-radius: 15px;\n"
+                                       "  background-color: #F9DFF9;\n"
+                                       "  border: none;\n"
+                                       "  color: #000;\n"
 
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:pressed {\n"
-                                   "  background: #FFA;\n"
-                                   "}")
+                                       "}\n"
+                                       "\n"
+                                       "QPushButton:pressed {\n"
+                                       "  background: #FFA;\n"
+                                       "}")
 
         ui.pushButton_4.setText('Vaughan Marinov')
         ui.pushButton_24.setText('Nausikaa MacAslan')
         ui.pushButton_25.setText('')
 
-
     else:
         ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                               "  padding: 15px 30px;\n"
-                               "  font-size: 16px;\n"
-                               "  border-radius: 15px;\n"
-                               "  background-color: #FFA;\n"
-                               "  border: none;\n"
-                               "  color: #000;\n"
+                                      "  padding: 15px 30px;\n"
+                                      "  font-size: 16px;\n"
+                                      "  border-radius: 15px;\n"
+                                      "  background-color: #FFA;\n"
+                                      "  border: none;\n"
+                                      "  color: #000;\n"
 
-                               "}\n"
-                               "\n"
-                               "QPushButton:pressed {\n"
-                               "  background: #f7f2f2;\n"
-                               "}")
-
+                                      "}\n"
+                                      "\n"
+                                      "QPushButton:pressed {\n"
+                                      "  background: #f7f2f2;\n"
+                                      "}")
 
         ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                            "  padding: 15px 30px;\n"
-                            "  font-size: 16px;\n"
-                            "  border-radius: 15px;\n"
-                            "  background-color: #F9DFF9;\n"
-                            "  border: none;\n"
-                            "  color: #000;\n"
+                                       "  padding: 15px 30px;\n"
+                                       "  font-size: 16px;\n"
+                                       "  border-radius: 15px;\n"
+                                       "  background-color: #F9DFF9;\n"
+                                       "  border: none;\n"
+                                       "  color: #000;\n"
 
-                            "}\n"
-                            "\n"
-                            "QPushButton:pressed {\n"
-                            "  background: #F9DFF9;\n"
-                            "}")
+                                       "}\n"
+                                       "\n"
+                                       "QPushButton:pressed {\n"
+                                       "  background: #F9DFF9;\n"
+                                       "}")
         ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                            "  padding: 15px 30px;\n"
-                            "  font-size: 16px;\n"
-                            "  border-radius: 15px;\n"
-                            "  background-color: #F9DFF9;\n"
-                            "  border: none;\n"
-                            "  color: #000;\n"
+                                       "  padding: 15px 30px;\n"
+                                       "  font-size: 16px;\n"
+                                       "  border-radius: 15px;\n"
+                                       "  background-color: #F9DFF9;\n"
+                                       "  border: none;\n"
+                                       "  color: #000;\n"
 
-                            "}\n"
-                            "\n"
-                            "QPushButton:pressed {\n"
-                            "  background: #F9DFF9;\n"
-                            "}")
+                                       "}\n"
+                                       "\n"
+                                       "QPushButton:pressed {\n"
+                                       "  background: #F9DFF9;\n"
+                                       "}")
 
         ui.pushButton_4.setText('Нічого не знайдено')
 
 # Функція пошуку
 
 
-data = open("customers.txt","r")
+data = open("customers.txt", "r")
 temp = data.read().splitlines()
 for i in range(len(temp)):
     Customer.firstName = temp[i]
     ui.lineEdit_2.setText(temp[i])
-    i+=1
+    i += 1
     Customer.lastName = temp[i]
     ui.lineEdit_3.setText(temp[i])
-    i+=1
+    i += 1
     Customer.middleName = temp[i]
     ui.lineEdit_4.setText(temp[i])
-    i+=1
+    i += 1
     Customer.birthdayDate = temp[i]
     ui.lineEdit_5.setText(temp[i])
-    i+=1
+    i += 1
     Customer.phoneNumber = temp[i]
     ui.lineEdit_6.setText(temp[i])
-    i+=1
+    i += 1
     Customer.email = temp[i]
     ui.lineEdit_8.setText(temp[i])
-    i+=1
+    i += 1
     Customer.sex = temp[i]
     ui.comboBox.setCurrentText(temp[i])
     if not data.readline():
