@@ -34,7 +34,6 @@ def login_ask(message):
     bot.send_message(message.chat.id, "Send me your *login*", parse_mode="Markdown")
     # goto login_ask_complete
     bot.register_next_step_handler(message, login_ask_complete)
-@bot.message_handler(content_types=["text"])
 def login_ask_complete(message):
     # / login
     global login_from_bot
@@ -49,7 +48,6 @@ def password_ask(message):
     bot.send_message(message.chat.id, "Send me your *password*", parse_mode="Markdown")
     # goto password_ask_complete
     bot.register_next_step_handler(message, password_ask_complete)
-@bot.message_handler(content_types=["text"])
 def password_ask_complete(message):
     # / password
     global password_from_bot
@@ -60,7 +58,6 @@ def password_ask_complete(message):
 
 
 # ! signup_complete
-@bot.message_handler(content_types=["text"])
 def signup_complete(message):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item_schedule = types.KeyboardButton("📰 Schedule")
@@ -87,8 +84,7 @@ def buttons(message):
     # ! schedule
     elif message.text == "📰 Schedule":
         bot.send_message(message.chat.id, "*Schedule of your patients:*", parse_mode="Markdown")
-        # bot.send_message(message.chat.id, "Full Name:{fullName}\nDate: {date}\nTime: {time}")
-
+        bot.send_message(message.chat.id, "Full Name: fullName\nDate: date\nTime: time")
 
 # ! database
 def database(message):
