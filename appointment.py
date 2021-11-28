@@ -90,7 +90,7 @@ class Ui_MainWindow_B(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Make an Appointment"))
         self.lineEdit.setText(_translate("MainWindow", "Choose the date"))
         self.lineEdit_2.setText(_translate("MainWindow", "Choose the time"))
         self.pushButton_1.setText(_translate("MainWindow", "Make appointment"))
