@@ -1074,33 +1074,36 @@ def search():
 
 try:
     data = open("customers.txt", "r")
+    temp = data.read().splitlines()
+    for i in range(len(temp)):
+        Customer.firstName = temp[i]
+        ui.lineEdit_2.setText(temp[i])
+        i += 1
+        Customer.lastName = temp[i]
+        ui.lineEdit_3.setText(temp[i])
+        i += 1
+        Customer.middleName = temp[i]
+        ui.lineEdit_4.setText(temp[i])
+        i += 1
+        Customer.birthdayDate = temp[i]
+        ui.lineEdit_5.setText(temp[i])
+        i += 1
+        Customer.phoneNumber = temp[i]
+        ui.lineEdit_6.setText(temp[i])
+        i += 1
+        Customer.email = temp[i]
+        ui.lineEdit_8.setText(temp[i])
+        i += 1
+        Customer.sex = temp[i]
+        ui.comboBox.setCurrentText(temp[i])
+        if not data.readline():
+            break
+
 except:
     data = open("customers.txt", "w")
-temp = data.read().splitlines()
 
-for i in range(len(temp)):
-    Customer.firstName = temp[i]
-    ui.lineEdit_2.setText(temp[i])
-    i += 1
-    Customer.lastName = temp[i]
-    ui.lineEdit_3.setText(temp[i])
-    i += 1
-    Customer.middleName = temp[i]
-    ui.lineEdit_4.setText(temp[i])
-    i += 1
-    Customer.birthdayDate = temp[i]
-    ui.lineEdit_5.setText(temp[i])
-    i += 1
-    Customer.phoneNumber = temp[i]
-    ui.lineEdit_6.setText(temp[i])
-    i += 1
-    Customer.email = temp[i]
-    ui.lineEdit_8.setText(temp[i])
-    i += 1
-    Customer.sex = temp[i]
-    ui.comboBox.setCurrentText(temp[i])
-    if not data.readline():
-        break
+
+
 
 data.close()
 
