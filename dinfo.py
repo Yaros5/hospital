@@ -168,9 +168,9 @@ def botBook():
     
     toWrite = f"*Name:* {fullName}, *Date:* {date}, *Time:* {time}"
     
-    fw = open("apoInfo.txt", "w")
-    fw.write(toWrite)
-    fw.close()
+    f = open("apoInfo.txt", "w")
+    f.write(toWrite)
+    f.close()
 
 
 def closeAll():
