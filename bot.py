@@ -91,24 +91,9 @@ def buttons(message):
         # bot.send_message(message.chat.id, "Full Name:{fullName}\nDate: {date}\nTime: {time}")
 
 
-# ! verification
-def verification(message):
+# ! database
+def database(message):
     pass
-    # bot.send_message(message.chat.id, f"*Your name is {message.text}*", parse_mode="Markdown")
-
-    # / login
-    # global login_from_bot
-    # login_from_bot = message.text
-    # print(f"User login: {login_from_bot}")
-    # / password
-    # global password_from_bot
-    # password_from_bot = message.text
-    # print(f"User password: {password_from_bot}")
-    # # / id
-    # global id_from_bot
-    # id_from_bot = message.from_user.id
-    # print(f"User id: {id_from_bot}")
-
     # ! database
     # global db, sql
     # db = sqlite3.connect('server.db')
