@@ -1066,7 +1066,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Private Hospital App"))
         self.label.setText(_translate("MainWindow", "Search for doctors online"))
         self.label_2.setText(_translate("MainWindow", "Make an appointment without leaving home"))
         self.lineEdit_46.setPlaceholderText(_translate("MainWindow", "Enter the last name or specialty "))

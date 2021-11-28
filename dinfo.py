@@ -1072,8 +1072,10 @@ def search():
 
 # Функція пошуку
 
-
-data = open("customers.txt", "r")
+try:
+    data = open("customers.txt", "r")
+except:
+    data = open("customers.txt", "w")
 temp = data.read().splitlines()
 
 for i in range(len(temp)):
