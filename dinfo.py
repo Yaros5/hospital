@@ -190,10 +190,6 @@ def closeAll():
     close19()
 
 
-def func():
-    return date, time, fullName
-
-
 def book():
     MainWBook.show()
     uiB.pushButton_2.clicked.connect(closeB)
