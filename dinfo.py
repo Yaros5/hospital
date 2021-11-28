@@ -411,12 +411,18 @@ def binary_Search(list, item):
             high = mid - 1
     return None
 
+dict_doctor = {'Ales Ruff' : open1, 'Armann Fujimoto' : open2, 'Barnabas Budai' : open3, 'Brian Schneider' : open4, 'Cili Kipling' : open5, 'Dimas Bergman' : open6,
+               'Elo Carson' : open7, 'Jennifer Kazlow' : open8, 'Kristian Trevis' : open9, 'Lydia Jokumsen' : open10, 'Mathieu Nanni' : open11,
+               'Nausikaa MacAslan' : open12,
+               'Rut Langer' : open13, 'Sarit Ridge' : open14, 'Scarlet Neil' : open15, 'Vanda Chester' : open16, 'Vaughan Marinov' : open17, 'Widald Serra' : open18,
+               'Xenagoras Chaves' : open19}
 
 list_doctor = ['Ales Ruff', 'Armann Fujimoto', 'Barnabas Budai', 'Brian Schneider', 'Cili Kipling', 'Dimas Bergman',
                'Elo Carson', 'Jennifer Kazlow', 'Kristian Trevis', 'Lydia Jokumsen', 'Mathieu Nanni',
                'Nausikaa MacAslan',
                'Rut Langer', 'Sarit Ridge', 'Scarlet Neil', 'Vanda Chester', 'Vaughan Marinov', 'Widald Serra',
                'Xenagoras Chaves']
+
 list_specification = ['ENT-doctor', 'Proctologist', 'Surgeon', 'Ophthalmologist', 'Physician',
                       'Urologist', 'Cardiologist', 'Endocrinologist', 'Neurologist',
                       'Oncologist', 'Dentist']
@@ -463,13 +469,18 @@ ui.pushButton_25.setStyleSheet("QPushButton {\n"
 
 
 def search():
-    ui.pushButton_4.disconnect()
-    ui.pushButton_24.disconnect()
-    ui.pushButton_25.disconnect()
+    try:
+        ui.pushButton_4.disconnect()
+        ui.pushButton_24.disconnect()
+        ui.pushButton_25.disconnect()
+    except:
+        a = 0
     a = ui.lineEdit_46.text()
     place = binary_Search(list_doctor, a)
-    if a in list_doctor:
+    if a in dict_doctor:
         ui.pushButton_4.setText(f'Doctor {a} ')
+        ui.pushButton_24.setText('')
+        ui.pushButton_25.setText('')
         ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                       "  padding: 15px 30px;\n"
                                       "  font-size: 16px;\n"
@@ -483,8 +494,35 @@ def search():
                                       "QPushButton:pressed {\n"
                                       "  background: #f7f2f2;\n"
                                       "}")
+        ui.pushButton_24.setStyleSheet("QPushButton {\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
+
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #f7f2f2;\n"
+                                           "}")
+        ui.pushButton_25.setStyleSheet("QPushButton {\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
+
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
+        ui.pushButton_4.clicked.connect(dict_doctor[a])
         
-    if a in list_specification:
+    elif a in list_specification:
         if a == 'ENT-doctor':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
@@ -533,7 +571,7 @@ def search():
             ui.pushButton_25.setText('Cili Kipling')
             ui.pushButton_25.clicked.connect(open5)
 
-        if a == 'Proctologist':
+        elif a == 'Proctologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -579,7 +617,7 @@ def search():
             ui.pushButton_4.clicked.connect(open13)
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
-        if a == 'Surgeon':
+        elif a == 'Surgeon':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -625,7 +663,7 @@ def search():
             ui.pushButton_24.setText('Xenagoras Chaves')
             ui.pushButton_24.clicked.connect(open19)
             ui.pushButton_25.setText('')
-        if a == 'Ophthalmologist':
+        elif a == 'Ophthalmologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -672,7 +710,7 @@ def search():
             ui.pushButton_24.clicked.connect(open18)
             ui.pushButton_25.setText('')
 
-        if a == 'Physician':
+        elif a == 'Physician':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -719,7 +757,7 @@ def search():
             ui.pushButton_24.setText('Armann Fujimoto')
             ui.pushButton_24.clicked.connect(open2)
             ui.pushButton_25.setText('')
-        if a == 'Urologist':
+        elif a == 'Urologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -766,7 +804,7 @@ def search():
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
 
-        if a == 'Cardiologist':
+        elif a == 'Cardiologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -814,7 +852,7 @@ def search():
             ui.pushButton_24.clicked.connect(open3)
             ui.pushButton_25.setText('')
 
-        if a == 'Endocrinologist':
+        elif a == 'Endocrinologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -861,7 +899,7 @@ def search():
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
 
-        if a == 'Neurologist':
+        elif a == 'Neurologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -907,7 +945,7 @@ def search():
             ui.pushButton_4.clicked.connect(open8)
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
-        if a == 'Oncologist':
+        elif a == 'Oncologist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -953,7 +991,7 @@ def search():
             ui.pushButton_4.clicked.connect(open7)
             ui.pushButton_24.setText('')
             ui.pushButton_25.setText('')
-        if a == 'Dentist':
+        elif a == 'Dentist':
             ui.pushButton_4.setStyleSheet("QPushButton {\n"
                                           "  padding: 15px 30px;\n"
                                           "  font-size: 16px;\n"
@@ -1003,52 +1041,55 @@ def search():
 
     else:
         ui.pushButton_4.setStyleSheet("QPushButton {\n"
-                                      "  padding: 15px 30px;\n"
-                                      "  font-size: 16px;\n"
-                                      "  border-radius: 15px;\n"
-                                      "  background-color: #FFA;\n"
-                                      "  border: none;\n"
-                                      "  color: #000;\n"
+                                          "  padding: 15px 30px;\n"
+                                          "  font-size: 16px;\n"
+                                          "  border-radius: 15px;\n"
+                                          "  background-color: #FFA;\n"
+                                          "  border: none;\n"
+                                          "  color: #000;\n"
 
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "  background: #f7f2f2;\n"
-                                      "}")
+                                          "}\n"
+                                          "\n"
+                                          "QPushButton:pressed {\n"
+                                          "  background: #f7f2f2;\n"
+                                          "}")
 
         ui.pushButton_24.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
         ui.pushButton_25.setStyleSheet("QPushButton {\n"
-                                       "  padding: 15px 30px;\n"
-                                       "  font-size: 16px;\n"
-                                       "  border-radius: 15px;\n"
-                                       "  background-color: #F9DFF9;\n"
-                                       "  border: none;\n"
-                                       "  color: #000;\n"
+                                           "  padding: 15px 30px;\n"
+                                           "  font-size: 16px;\n"
+                                           "  border-radius: 15px;\n"
+                                           "  background-color: #F9DFF9;\n"
+                                           "  border: none;\n"
+                                           "  color: #000;\n"
 
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:pressed {\n"
-                                       "  background: #F9DFF9;\n"
-                                       "}")
+                                           "}\n"
+                                           "\n"
+                                           "QPushButton:pressed {\n"
+                                           "  background: #F9DFF9;\n"
+                                           "}")
 
         ui.pushButton_24.setText('')
         ui.pushButton_25.setText('')
         ui.pushButton_4.setText('Нічого не знайдено')
-        ui.pushButton_4.clicked.connect(close1)
-        ui.pushButton_24.clicked.connect(close1)
-        ui.pushButton_25.clicked.connect(close1)
+        try:
+            ui.pushButton_4.disconnect()
+            ui.pushButton_24.disconnect()
+            ui.pushButton_25.disconnect()
+        except:
+            a = 0
 
 # Функція пошуку
 
