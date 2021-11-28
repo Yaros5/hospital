@@ -165,11 +165,20 @@ def botBook():
     time = uiB.timeEdit.time().toString("hh:mm")
     closeAll()
     
-    toWrite = f"*Name:* {fullName}, *Date:* {date}, *Time:* {time}"
-    
-    fw = open("apoInfo.txt", "w")
-    fw.write(toWrite)
+    toWrite = f"*Name:* {fullName}, *Date:* {date}, *Time:* {time}\n"
+
+    fw = open("apoInfo.txt", "r")
+    file = fw.read()
     fw.close()
+    
+    if file == None:
+        fw = open("apoInfo.txt", "w")
+        fw.write(toWrite)
+        fw.close()
+    else:
+        fw = open("apoInfo.txt", "a")
+        fw.write(toWrite)
+        fw.close()
 
 
 def closeAll():
