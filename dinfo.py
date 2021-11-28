@@ -118,7 +118,6 @@ def botBook():
     fullName = ui.lineEdit_2.text() + " " + ui.lineEdit_3.text() + " " + ui.lineEdit_4.text()
     date = uiB.dateEdit.date().toString("dd.MM.yyyy")
     time = uiB.timeEdit.time().toString("hh:mm")
-    print(date, time, fullName)
     MainWBook.close()
     close1()
     close2()
