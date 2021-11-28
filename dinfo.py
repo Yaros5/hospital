@@ -197,8 +197,7 @@ def closeAll():
 
 def book():
     MainWBook.show()
-    uiB.pushButton_2.clicked.connect(closeB)
-    uiB.pushButton_1.clicked.connect(botBook)
+    
 
 
 def closeB():
@@ -207,8 +206,7 @@ def closeB():
 
 def open1():
     MainW1.show()
-    ui1.pushButton_1.clicked.connect(close1)
-    ui1.pushButton_2.clicked.connect(book)
+    
 
 
 def close1():
@@ -217,8 +215,7 @@ def close1():
 
 def open2():
     MainW2.show()
-    ui2.pushButton_1.clicked.connect(close2)
-    ui2.pushButton_2.clicked.connect(book)
+    
 
 
 def close2():
@@ -227,8 +224,7 @@ def close2():
 
 def open3():
     MainW3.show()
-    ui3.pushButton_1.clicked.connect(close3)
-    ui3.pushButton_2.clicked.connect(book)
+    
 
 
 def close3():
@@ -237,8 +233,7 @@ def close3():
 
 def open4():
     MainW4.show()
-    ui4.pushButton_1.clicked.connect(close4)
-    ui4.pushButton_2.clicked.connect(book)
+    
 
 
 def close4():
@@ -247,8 +242,7 @@ def close4():
 
 def open5():
     MainW5.show()
-    ui5.pushButton_1.clicked.connect(close5)
-    ui5.pushButton_2.clicked.connect(book)
+    
 
 
 def close5():
@@ -257,8 +251,7 @@ def close5():
 
 def open6():
     MainW6.show()
-    ui6.pushButton_1.clicked.connect(close6)
-    ui6.pushButton_2.clicked.connect(book)
+    
 
 
 def close6():
@@ -267,8 +260,7 @@ def close6():
 
 def open7():
     MainW7.show()
-    ui7.pushButton_1.clicked.connect(close7)
-    ui7.pushButton_2.clicked.connect(book)
+    
 
 
 def close7():
@@ -277,8 +269,7 @@ def close7():
 
 def open8():
     MainW8.show()
-    ui8.pushButton_1.clicked.connect(close8)
-    ui8.pushButton_2.clicked.connect(book)
+    
 
 
 def close8():
@@ -287,8 +278,7 @@ def close8():
 
 def open9():
     MainW9.show()
-    ui9.pushButton_1.clicked.connect(close9)
-    ui9.pushButton_2.clicked.connect(book)
+    
 
 
 def close9():
@@ -297,8 +287,7 @@ def close9():
 
 def open10():
     MainW10.show()
-    ui10.pushButton_1.clicked.connect(close10)
-    ui10.pushButton_2.clicked.connect(book)
+    
 
 
 def close10():
@@ -307,8 +296,7 @@ def close10():
 
 def open11():
     MainW11.show()
-    ui11.pushButton_1.clicked.connect(close11)
-    ui11.pushButton_2.clicked.connect(book)
+    
 
 
 def close11():
@@ -317,8 +305,7 @@ def close11():
 
 def open12():
     MainW12.show()
-    ui12.pushButton_1.clicked.connect(close12)
-    ui12.pushButton_2.clicked.connect(book)
+    
 
 
 def close12():
@@ -327,8 +314,7 @@ def close12():
 
 def open13():
     MainW13.show()
-    ui13.pushButton_1.clicked.connect(close13)
-    ui13.pushButton_2.clicked.connect(book)
+    
 
 
 def close13():
@@ -337,8 +323,7 @@ def close13():
 
 def open14():
     MainW14.show()
-    ui14.pushButton_1.clicked.connect(close14)
-    ui14.pushButton_2.clicked.connect(book)
+    
 
 
 def close14():
@@ -347,8 +332,7 @@ def close14():
 
 def open15():
     MainW15.show()
-    ui15.pushButton_1.clicked.connect(close15)
-    ui15.pushButton_2.clicked.connect(book)
+    
 
 
 def close15():
@@ -357,8 +341,7 @@ def close15():
 
 def open16():
     MainW16.show()
-    ui16.pushButton_1.clicked.connect(close16)
-    ui16.pushButton_2.clicked.connect(book)
+    
 
 
 def close16():
@@ -367,8 +350,7 @@ def close16():
 
 def open17():
     MainW17.show()
-    ui17.pushButton_1.clicked.connect(close17)
-    ui17.pushButton_2.clicked.connect(book)
+    
 
 
 def close17():
@@ -377,8 +359,7 @@ def close17():
 
 def open18():
     MainW18.show()
-    ui18.pushButton_1.clicked.connect(close18)
-    ui18.pushButton_2.clicked.connect(book)
+    
 
 
 def close18():
@@ -387,8 +368,7 @@ def close18():
 
 def open19():
     MainW19.show()
-    ui19.pushButton_1.clicked.connect(close19)
-    ui19.pushButton_2.clicked.connect(book)
+    
 
 
 def close19():
@@ -1145,6 +1125,47 @@ ui.pushButton_20.clicked.connect(open16)
 ui.pushButton_21.clicked.connect(open17)
 ui.pushButton_22.clicked.connect(open18)
 ui.pushButton_23.clicked.connect(open19)
+
+uiB.pushButton_2.clicked.connect(closeB)
+uiB.pushButton_1.clicked.connect(botBook)
+ui1.pushButton_1.clicked.connect(close1)
+ui1.pushButton_2.clicked.connect(book)
+ui2.pushButton_1.clicked.connect(close2)
+ui2.pushButton_2.clicked.connect(book)
+ui3.pushButton_1.clicked.connect(close3)
+ui3.pushButton_2.clicked.connect(book)
+ui4.pushButton_1.clicked.connect(close4)
+ui4.pushButton_2.clicked.connect(book)
+ui5.pushButton_1.clicked.connect(close5)
+ui5.pushButton_2.clicked.connect(book)
+ui6.pushButton_1.clicked.connect(close6)
+ui6.pushButton_2.clicked.connect(book)
+ui7.pushButton_1.clicked.connect(close7)
+ui7.pushButton_2.clicked.connect(book)
+ui8.pushButton_1.clicked.connect(close8)
+ui8.pushButton_2.clicked.connect(book)
+ui9.pushButton_1.clicked.connect(close9)
+ui9.pushButton_2.clicked.connect(book)
+ui10.pushButton_1.clicked.connect(close10)
+ui10.pushButton_2.clicked.connect(book)
+ui11.pushButton_1.clicked.connect(close11)
+ui11.pushButton_2.clicked.connect(book)
+ui12.pushButton_1.clicked.connect(close12)
+ui12.pushButton_2.clicked.connect(book)
+ui13.pushButton_1.clicked.connect(close13)
+ui13.pushButton_2.clicked.connect(book)
+ui14.pushButton_1.clicked.connect(close14)
+ui14.pushButton_2.clicked.connect(book)
+ui15.pushButton_1.clicked.connect(close15)
+ui15.pushButton_2.clicked.connect(book)
+ui16.pushButton_1.clicked.connect(close16)
+ui16.pushButton_2.clicked.connect(book)
+ui17.pushButton_1.clicked.connect(close17)
+ui17.pushButton_2.clicked.connect(book)
+ui18.pushButton_1.clicked.connect(close18)
+ui18.pushButton_2.clicked.connect(book)
+ui19.pushButton_1.clicked.connect(close19)
+ui19.pushButton_2.clicked.connect(book)
 
 # виходим з вікна
 sys.exit(app.exec_())
