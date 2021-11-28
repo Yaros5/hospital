@@ -189,6 +189,7 @@ def closeAll():
     close18()
     close19()
 
+
 def book():
     MainWBook.show()
     uiB.pushButton_2.clicked.connect(closeB)
