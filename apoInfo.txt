@@ -1,10 +1,2 @@
-*Name:* Homa Yaroslavovych Oleh,
-*Date:* 28.11.2021, *Time:* 10:00
-*Name:* Hladii  Olena,
-*Date:* 28.11.2021, *Time:* 10:00
-*Name:* Yaroslav  Sadovskyi,
-*Date:* 30.11.2021, *Time:* 15:00
-*Name:* Oleh Viktorovych Khoma,
-*Date:* 21.12.2021, *Time:* 17:02
-*Name:* Oleh Viktorovych Khoma,
-*Date:* 28.11.2021, *Time:* 09:00
+*Name:* Yaroslav Viktorovych Khoma,
+*Date:* 28.12.2021, *Time:* 09:00
